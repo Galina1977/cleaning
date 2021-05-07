@@ -1,0 +1,75 @@
+<meta name="pobots" content="none">
+<meta name="Author" content="Galina Pener">
+
+
+<!-- ©Верстка сделана Пенер Галиной 18 марта 2021 года -->
+<!-- email: galyapener@mail.ru -->
+
+@media (max-width: 1200px)
+@media (max-width: 992px)
+@media (max-width: 768px)
+@media (max-width: 576px)
+
+.........................
+git add .
+git commit -m 'переделал 1 страницу index'
+git push origin main
+
+Запушев и у нас все арвно не уходит тогда
+git pull
+и снова
+git push origin main
+.........................
+
+
+$default: #7b7b7b;
+
+$title: #1f2044;
+
+$bg: #fcd7b6;
+
+$accent: #fe3e57;
+
+
+@extend %checkbox-hidden; Прячем чекбокс
+
+@extend %btn;  Кнопка
+
+@extend%cambay-700;  Шрифт
+
+body {
+  @extend%cambay-700;
+  color: $default;
+  font-size: 16px;
+}
+
+.......................
+
+background-image: url("../images/section_1/fruit.png");
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+...................
+
+У КНОПКИ И ССЫЛКИ ДОЛЖНО БЫТЬ ТРИ СОСТОЯНИЯ  :focus :hover :active
+
+transition: background 0.5s, color 0.5s;
+  &:focus {
+    background-color: $accent;
+  }
+  &:hover {
+    background-color: #fff;
+  }
+  &:active {
+    background-color: #cec6c6;
+  }
+
+
+ДЛЯ ИНПУТОВ
+
+:focus {
+  outline: none;
+  border-color: #ff0000;
+}
