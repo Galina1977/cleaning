@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  @extend%roboto-300;
+  padding: 18px 48px;
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #fff;
+  background-color: $accent;
+  box-shadow: 0px 18px 18px 0px rgba(199, 90, 157, 0.28);
+  border-radius: 26.5px;
+  position: relative;
+  transition: background 0.6s, color 0.5s;
+  &:focus {
+    background-color: #ca067f;
+  }
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  &:active {
+    background-color: #6d6767;
+  }
+  &::before {
+    content: "";
+    background-image: url("../images/header/button.png");
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: 7px;
+    left: -10px;
+  }
+}

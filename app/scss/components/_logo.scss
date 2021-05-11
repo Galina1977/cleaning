@@ -1,0 +1,19 @@
+.logo {
+  width: 169px;
+  min-height: 169px;
+  z-index: 10;
+  &__img {
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 110px;
+    min-height: 112px;
+    margin-bottom: 10px;
+    z-index: 10;
+  }
+}

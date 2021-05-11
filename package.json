@@ -9,7 +9,7 @@
   "author": "Galina Pener",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -28,6 +28,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "animate.css": "^4.1.1",
     "gulp-cli": "^2.3.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "magnific-popup": "^1.1.0"
   }
 }

@@ -14,10 +14,10 @@ body {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 16px;
+  @extend%roboto-400;
+  font-size: 15px;
   line-height: 1;
+  color: $default;
   background-color: #fff;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
@@ -35,14 +35,24 @@ body {
 
 button:focus {
   outline-offset: 1px;
-  outline-color: #fc5d5c;
+  outline-color: #c75a9d;
   outline-width: 1px;
 }
 
 a:focus {
   outline-offset: 1px;
-  outline-color: #fc5d5c;
+  outline-color: #c75a9d;
   outline-width: 1px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #c75a9d;
+}
+
+label {
+  font-size: 0;
+  line-height: 0;
 }
 
 @media (max-width: 768px) {

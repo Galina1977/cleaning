@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  @extend%roboto-300;
+  padding: 18px 48px;
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #fff;
+  background-color: $accent;
+  box-shadow: 0px 18px 18px 0px rgba(199, 90, 157, 0.28);
+  border-radius: 26.5px;
+  transition: background 0.5s, color 0.5s;
+  &:focus {
+    background-color: #ca067f;
+  }
+  &:hover {
+    background-color: #fff;
+    color: #100f2e;
+  }
+  &:active {
+    background-color: #c75a9d;
+  }
+}

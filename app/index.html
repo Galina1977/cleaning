@@ -1,17 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="pobots" content="none">
+  <meta name="Author" content="Galina Pener">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$</title>
+  <title>Чистая фея</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-wrapper">
+          <a class="logo">
+            <img class="logo__img" src="images/header/logo.png" alt="Чистая фея">
+          </a>
+          <div class="header__top-inner">
+            <p class="header__text">
+              Сеть клининговых центров <span> по Москве и МО </span>
+            </p>
+            <div class="header__box-info">
+              <a class="header__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
+              <a class="header__mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
+            </div>
+            <button class="menu-btn" type="button">
+              <span></span>
+            </button>
+            <div class="popup">
+              <button class="button" type="button" title="Всплывающее окно popup">Заказать звонок </button>
+            </div>
+            <div class="pop">
+              <div class="pop__inner">
+                <a class="pop__close" href="#">
+                  <svg class="pop__close-svg">
+                    <use xlink:href="images/icons/close.svg#close"></use>
+                  </svg>
+                </a>
+                <div class="pop__title">Заказать звонок</div>
+                <div class="pop__item">
+                  <img class="pop__img pop__img--1" src="images/popup/1.png" alt="Дом">
+                  <p class="pop__text pop__text--1"><span>Скидка</span> на мойку окон <span>50 % </span> при заказе уборки коттеджа </p>
+                </div>
+                <div class="pop__item">
+                  <img class="pop__img pop__img--2" src="images/popup/2.png" alt="Уборщица">
+                  <p class="pop__text pop__text--2"><span>Скидка</span> на мойку окон <span>20 % </span> при заказе
+                    любого вида уборки </p>
+                </div>
+                <div class="pop__item">
+                  <img class="pop__img pop__img--3" src="images/popup/3.png" alt="Инвентарь для уборки">
+                  <p class="pop__text pop__text--3"><span>Скидка </span> на
+                    первый заказ <span>15 % </span></p>
+                </div>
+                <div class="pop__item">
+                  <img class="pop__img pop__img--4" src="images/popup/4.png" alt="Подарок">
+                  <p class="pop__text pop__text--4"><span>Скидка </span> на
+                    День Рождения <span>20 % </span></p>
+                </div>
+                <form class="form" action="#" autocomplete="on">
+                  <label>Ваш е-маил
+                    <input class="form__input" type="еmail" name="еmail" placeholder="Ваш е-маил" required>
+                  </label>
+                  <label>Ваш имя
+                    <input class="form__input" type="text" name="name" placeholder="Ваш имя">
+                  </label>
+                  <div class="form__box-btn">
+                    <button class="form-btn" type="submit">Отправить</button>
+                  </div>
+                  <label class="form__label-checked">
+                    <input class="filter-style" type="checkbox" required>
+                    Даю своё согласие на обработку <span>персональных данных</span>
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__banner" style="background-image: url(images/header/fon_bg.jpg);">
+      <div class="container">
+        <div class="header__box-menu">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="#">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Услуги</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__bottom-inner">
+          <div class="header__box-link">
+            <a class="header__link" href="#">Хотите помыть окна?</a>
+          </div>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img social__img--whatsapp" src="images/header/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img social__img--instagram" src="images/header/instagram.svg" alt="">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img social__img--viber" src="images/header/viber.svg" alt="">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img social__img--telegram" src="images/header/telegram.svg" alt="">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img social__img--vk" src="images/header/vk.svg" alt="">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img social__img--facebook" src="images/header/facebook.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <main class="main">
+    <div class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__title title">Чистая фея в цифрах</div>
+          <div class="about__specification">
+            <div class="about__item">
+              <span class="about__number">2 года</span>
+              <span class="about__text">на рынке клининга</span>
+            </div>
+            <div class="about__item">
+              <span class="about__number">более 15 000</span>
+              <span class="about__text">обработанных заявок</span>
+            </div>
+            <div class="about__item">
+              <span class="about__number">20 000 кв.м</span>
+              <span class="about__text">ежедневной уборки</span>
+            </div>
+            <div class="about__item">
+              <span class="about__number">20 человек</span>
+              <span class="about__text">наш персонал</span>
+            </div>
+          </div>
+          <div class="about__content">
+            <div class="about__video" style="background-image: url(images/about/video.jpg);">
+              <a class="about__video-play" data-fancybox href="https://www.youtube.com/watch?v=HGUQmTyUurI"></a>
+            </div>
+            <div class="about__price">
+              <div class="about__price-inner">
+                <p class="about__desc">Получить полный прайс нашей компании</p>
+                <form class="about__form" action="#" autocomplete="on">
+                  <label class="about__label" for="еmail">Ваш е-маил</label>
+                  <input id="еmail" class="about__input" type="еmail" name="еmail" placeholder="Ваш е-маил" required>
+                  <div class="about__box-btn">
+                    <button class="form-btn" type="submit">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="services">
+    </div>
   </main>
   <script src="js/main.min.js"></script>
+  <!-- ©Верстка сделана Пенер Галиной 10 мая 2021 года -->
+  <!-- email: galyapener@mail.ru -->
 </body>
 
 </html>
