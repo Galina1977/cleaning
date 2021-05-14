@@ -12,6 +12,11 @@
 
 <body>
   <header class="header">
+    <a class="scroller" id="scroller" href="#">
+      <svg class="scroller__arrow-circle">
+        <use xlink:href="images/icons/arrow-circle.svg#arrow-circle"></use>
+      </svg>
+    </a>
     <div class="header__top">
       <div class="container">
         <div class="header__top-wrapper">
@@ -61,13 +66,13 @@
                 </div>
                 <form class="form" action="#" autocomplete="on">
                   <label>Ваш е-маил
-                    <input class="form__input" type="еmail" name="еmail" placeholder="Ваш е-маил" required>
+                    <input class="form__input" type="text" name="еmail" placeholder="Ваш е-маил" required>
                   </label>
                   <label>Ваш имя
                     <input class="form__input" type="text" name="name" placeholder="Ваш имя">
                   </label>
-                  <div class="form__box-btn">
-                    <button class="form-btn" type="submit">Отправить</button>
+                  <div class="form__box-button">
+                    <button class="form__button" type="submit">Отправить</button>
                   </div>
                   <label class="form__label-checked">
                     <input class="filter-style" type="checkbox" required>
@@ -89,10 +94,10 @@
                 <a class="menu__link menu__link--active" href="#">Главная</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">О нас</a>
+                <a class="menu__link" href="#about">О нас</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Услуги</a>
+                <a class="menu__link" href="#services">Услуги</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">Отзывы</a>
@@ -107,6 +112,13 @@
           </nav>
         </div>
         <div class="header__bottom-inner">
+          <div class="header__arrows">
+            <a class="header__arrows-link" href="#about">
+              <svg class="header__arrows-svg">
+                <use xlink:href="images/icons/header_arrow.svg#header_arrow"></use>
+              </svg>
+            </a>
+          </div>
           <div class="header__box-link">
             <a class="header__link" href="#">Хотите помыть окна?</a>
           </div>
@@ -149,7 +161,7 @@
     </div>
   </header>
   <main class="main">
-    <div class="about">
+    <div id="about" class="about">
       <div class="container">
         <div class="about__inner">
           <div class="about__title title">Чистая фея в цифрах</div>
@@ -178,11 +190,12 @@
             <div class="about__price">
               <div class="about__price-inner">
                 <p class="about__desc">Получить полный прайс нашей компании</p>
-                <form class="about__form" action="#" autocomplete="on">
-                  <label class="about__label" for="еmail">Ваш е-маил</label>
-                  <input id="еmail" class="about__input" type="еmail" name="еmail" placeholder="Ваш е-маил" required>
-                  <div class="about__box-btn">
-                    <button class="form-btn" type="submit">Отправить</button>
+                <form class="about__form form" action="#" autocomplete="on">
+                  <label>Ваш е-маил
+                    <input class="form__input" type="text" name="еmail" placeholder="Ваш е-маил" required>
+                  </label>
+                  <div class="form__box-button">
+                    <button class="form__button" type="submit">Отправить</button>
                   </div>
                 </form>
               </div>
@@ -192,7 +205,92 @@
       </div>
     </div>
     <!--  -->
-    <div class="services">
+    <div id="services" class="services">
+      <div class="container">
+        <div class="services__title title">Наши услуги</div>
+        <div class="services__wrapper">
+          <div class="services__item">
+            <div class="services__item-inner">
+              <span class="services__subject">Генеральная уборка</span>
+              <span class="services__price">от 3000 руб.</span>
+            </div>
+            <div class="services__box-btn">
+              <button class="btn" type="button">Заказать</button>
+              <button class="btn btn--transparent" type="button">Подробнее</button>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-inner services__item-inner--2">
+              <span class="services__subject">Уборка после ремонта</span>
+              <span class="services__price">от 100 руб./м2 </span>
+            </div>
+            <div class="services__box-btn">
+              <button class="btn" type="button">Заказать</button>
+              <button class="btn btn--transparent" type="button">Подробнее</button>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-inner services__item-inner--3">
+              <span class="services__subject">Поддерживающая уборка</span>
+              <span class="services__price">от 2000 руб.</span>
+            </div>
+            <div class="services__box-btn">
+              <button class="btn" type="button">Заказать</button>
+              <button class="btn btn--transparent" type="button">Подробнее</button>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-inner services__item-inner--4">
+              <span class="services__subject">Мойка окон</span>
+              <span class="services__price">от 550 руб.</span>
+            </div>
+            <div class="services__box-btn">
+              <button class="btn" type="button">Заказать</button>
+              <button class="btn btn--transparent" type="button">Подробнее</button>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-inner services__item-inner--5">
+              <span class="services__subject">VIP уборка</span>
+              <span class="services__price">от 150 руб./ м2.</span>
+            </div>
+            <div class="services__box-btn">
+              <button class="btn" type="button">Заказать</button>
+              <button class="btn btn--transparent" type="button">Подробнее</button>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-inner services__item-inner--6">
+              <span class="services__subject">Химчистка</span>
+              <span class="services__price">от 100 руб./ м2</span>
+            </div>
+            <div class="services__box-btn">
+              <button class="btn" type="button">Заказать</button>
+              <button class="btn btn--transparent" type="button">Подробнее</button>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-inner services__item-inner--7">
+              <span class="services__subject">Уборка домов / коттеджей</span>
+              <span class="services__price">от 100 руб./ м2</span>
+            </div>
+            <div class="services__box-btn">
+              <button class="btn" type="button">Заказать</button>
+              <button class="btn btn--transparent" type="button">Подробнее</button>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-inner services__item-inner--8">
+              <span class="services__subject">Домашний персонал</span>
+              <span class="services__price">от 500 руб./ час</span>
+            </div>
+            <div class="services__box-btn">
+              <button class="btn" type="button">Заказать</button>
+              <button class="btn btn--transparent" type="button">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <script src="js/main.min.js"></script>

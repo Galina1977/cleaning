@@ -22,5 +22,38 @@ $(function () {
 
   $(".filter-style").styler();
 
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 0) {
+        $("#scroller").fadeIn();
+      } else {
+        $("#scroller").fadeOut();
+      }
+    });
+    $("#scroller").click(function () {
+      $("body,html").animate(
+        {
+          scrollTop: 0,
+        },
+        800
+      );
+      return false;
+    });
+  });
+
+  $(".menu, .header__arrows").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr("href"),
+      top = $(id).offset().top;
+    $("body,html").animate({ scrollTop: top }, 1000);
+  });
+
+  $(".footer").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr("href"),
+      top = $(id).offset().top;
+    $("body,html").animate({ scrollTop: top }, 1000);
+  });
+
   new WOW().init();
 });

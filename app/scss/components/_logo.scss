@@ -1,19 +1,28 @@
 .logo {
-  width: 169px;
-  min-height: 169px;
+  flex: 0 0 169px;
   z-index: 10;
   &__img {
     width: 100%;
-    min-height: auto;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 1125px) {
+  .logo {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    flex: 0 0 125px;
   }
 }
 
 @media (max-width: 576px) {
   .logo {
-    width: 110px;
-    min-height: 112px;
-    margin-bottom: 10px;
+    flex: 0 0 100px;
+    margin-right: 0;
     z-index: 10;
   }
 }
