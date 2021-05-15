@@ -1,8 +1,9 @@
 .logo {
-  flex: 0 0 169px;
+  display: block;
   z-index: 10;
   &__img {
-    width: 100%;
+    width: 169px;
+    max-height: 169px;
     object-fit: cover;
   }
 }
@@ -13,16 +14,8 @@
   }
 }
 
-@media (max-width: 768px) {
-  .logo {
-    flex: 0 0 125px;
-  }
-}
-
 @media (max-width: 576px) {
   .logo {
-    flex: 0 0 100px;
     margin-right: 0;
-    z-index: 10;
   }
 }

@@ -12,21 +12,19 @@
   }
   &__item {
     flex: 0 0 275px;
-    min-height: 206px;
+    position: relative;
+    min-height: auto;
+    padding: 105px 25px 68px 25px;
+    text-align: center;
+    color: #000;
     border: 2px solid #d9d8d8;
     border-radius: 10px;
-    position: relative;
     margin-bottom: 130px;
     transition: all 0.4s;
     &:hover {
       border: 2px solid #c75a9d;
       box-shadow: 0px 18px 18px 0px rgba(199, 90, 157, 0.28);
     }
-  }
-  &__item-inner {
-    padding: 95px 25px 68px 25px;
-    text-align: center;
-    color: #000;
     &::before {
       content: "";
       background-image: url("../images/services/icon_1.svg");
@@ -74,7 +72,6 @@
       }
     }
   }
-
   &__subject {
     @extend%roboto-700;
     font-size: 17px;
@@ -88,9 +85,8 @@
   }
   &__box-btn {
     position: absolute;
-    left: 50%;
-    bottom: -50%;
-    transform: translateX(-50%);
+    left: 5px;
+    bottom: -105px;
     .btn {
       margin-bottom: 10px;
     }
@@ -116,15 +112,30 @@
 
 @media (max-width: 599px) {
   .services {
+    padding: 55px 0 20px;
     &__wrapper {
       display: block;
     }
     &__item {
-      margin-bottom: 140px;
+      padding: 105px 25px 55px 25px;
+      margin-bottom: 115px;
     }
     &__subject {
       font-size: 21px;
       margin-bottom: 5px;
+    }
+    &__box-btn {
+      left: 40px;
+      bottom: -95px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .services {
+    &__box-btn {
+      left: 3px;
+      bottom: -95px;
     }
   }
 }

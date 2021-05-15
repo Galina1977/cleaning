@@ -1,0 +1,119 @@
+.slogan {
+  padding: 55px 0 55px;
+  background-color: #f9f9f9;
+  &__title {
+    @extend%roboto-700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000;
+    margin-bottom: 35px;
+    &::selection {
+      background-color: $accent;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box-text {
+    max-width: 594px;
+  }
+  &__text {
+    @extend%roboto-400;
+    min-height: auto;
+    line-height: 22px;
+    & + & {
+      margin-top: 20px;
+    }
+    &::selection {
+      color: #000;
+      background-color: $accent;
+    }
+  }
+  &__box-item {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    max-width: 420px;
+  }
+  &__item {
+    flex: 0 0 200px;
+    min-height: auto;
+    padding: 105px 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(#000, 0.15);
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    transition: transform 0.9s;
+    &:hover {
+      transform: scale(-1, 1);
+    }
+    &::before {
+      content: "";
+      background-image: url("../images/slogan/cleaning_1.svg");
+      background-repeat: no-repeat;
+      width: 51px;
+      height: 55px;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &--2 {
+      &::before {
+        background-image: url("../images/slogan/cleaning_2.svg");
+        width: 56px;
+        height: 56px;
+      }
+    }
+    &--3 {
+      &::before {
+        background-image: url("../images/slogan/cleaning_3.svg");
+        width: 54px;
+        height: 54px;
+      }
+    }
+    &--4 {
+      &::before {
+        background-image: url("../images/slogan/cleaning_4.svg");
+        width: 57px;
+        height: 54px;
+      }
+    }
+  }
+  &__desc {
+    @extend%roboto-700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slogan {
+    &__row {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__box-text {
+      margin-bottom: 50px;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .slogan {
+    padding: 35px 0 35px;
+    &__row {
+      display: block;
+    }
+    &__box-item {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
