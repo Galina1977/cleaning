@@ -118,7 +118,7 @@
     background-color: #fff;
     border: 2px dashed #c75a9d;
     border-radius: 10px;
-    transition: all 0.4s;
+    transition: all 0.5s;
     &:focus {
       color: #7e0650;
       border: 2px dashed #7e0650;
@@ -237,14 +237,14 @@
     &--facebook,
     &--telegram {
       &:hover {
-        transform: scale(1.3);
+        transform: scale(1.09);
       }
     }
     &--vk {
       width: 43px;
       height: 43px;
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.09);
       }
     }
     &--facebook {

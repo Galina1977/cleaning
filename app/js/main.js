@@ -20,7 +20,35 @@ $(function () {
     $("body").toggleClass("lock");
   });
 
-  $(".filter-style").styler();
+  $(".specialist__slider").slick({
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: false,
+    prevArrow:
+      '<button type="button" class="slick-prev"><img src="images/specialist/left_arrow.svg" alt=""></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><img src="images/specialist/right_arrow.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
 
   $(document).ready(function () {
     $(window).scroll(function () {
@@ -54,6 +82,8 @@ $(function () {
       top = $(id).offset().top;
     $("body,html").animate({ scrollTop: top }, 1000);
   });
+
+  $(".filter-style").styler();
 
   new WOW().init();
 });
