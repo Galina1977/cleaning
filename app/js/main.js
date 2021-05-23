@@ -5,21 +5,23 @@ $(function () {
     });
   });
 
+  //
   $(document).ready(function () {
     $(".popup").click(function () {
       $(".pop").fadeIn(300);
     });
-
     $(".pop__close").click(function () {
       $(".pop").fadeOut(300);
     });
   });
 
+  //
   $(".menu-btn").click(function (event) {
     $(".menu-btn, .menu__list ").toggleClass("active");
     $("body").toggleClass("lock");
   });
 
+  //
   $(".specialist__slider").slick({
     dots: true,
     slidesToShow: 3,
@@ -50,6 +52,46 @@ $(function () {
     ],
   });
 
+  //
+  $(".process__slider").slick({
+    dots: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: false,
+    prevArrow:
+      '<button type="button" class="slick-prev"><img src="images/specialist/left_arrow.svg" alt=""></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><img src="images/specialist/right_arrow.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
+
+  //
   $(document).ready(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 0) {
@@ -69,6 +111,7 @@ $(function () {
     });
   });
 
+  //
   $(".menu, .header__arrows").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr("href"),
@@ -83,7 +126,14 @@ $(function () {
     $("body,html").animate({ scrollTop: top }, 1000);
   });
 
+  //
   $(".filter-style").styler();
 
+  //
+  $(".question__plus-minus").on("click", function () {
+    $(this).toggleClass("question__plus-minus--active");
+    $(this).next().slideToggle(500);
+  });
+  //
   new WOW().init();
 });

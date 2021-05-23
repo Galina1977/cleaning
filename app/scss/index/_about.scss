@@ -1,5 +1,5 @@
 .about {
-  padding-top: 190px;
+  padding-top: 185px;
   &__title {
     text-align: center;
     margin-bottom: 60px;
@@ -81,7 +81,7 @@
       height: 150px;
       position: absolute;
       left: -95px;
-      bottom: -63px;
+      bottom: -55px;
     }
   }
   &__desc {
@@ -159,7 +159,7 @@
 
 @media (max-width: 360px) {
   .about {
-    padding-top: 130px;
+    padding-top: 140px;
     &__title {
       margin-bottom: 17px;
     }
