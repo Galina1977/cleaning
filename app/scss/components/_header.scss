@@ -1,4 +1,5 @@
 .header {
+  padding-bottom: 160px;
   &__top-wrapper {
     display: flex;
     justify-content: space-between;
@@ -54,6 +55,7 @@
     }
   }
   &__mailto {
+    @extend%roboto-700;
     line-height: 1.2em;
     transition: color 0.3s;
     &:focus {
@@ -74,29 +76,6 @@
     min-height: 626px;
     margin-top: -115px;
     position: relative;
-  }
-  &__arrows {
-    position: absolute;
-    top: 76%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  &__arrows-svg {
-    display: block;
-    width: 50px;
-    height: 50px;
-    fill: #a5397c;
-    transition: fill 0.4s;
-    &:focus {
-      fill: #7e0650;
-    }
-    &:hover {
-      fill: #000;
-      transition: fill 0.4s;
-    }
-    &:active {
-      fill: #6d6767;
-    }
   }
   &__box-link {
     display: inline-block;
@@ -298,6 +277,7 @@
     overflow: hidden;
   }
   .header {
+    padding-bottom: 90px;
     &__top-wrapper {
       padding: 10px 0;
     }
@@ -376,7 +356,7 @@
       }
     }
     &__item {
-      margin: 18px 0;
+      margin: 35px 0;
       & + & {
         margin-left: 0;
       }
@@ -442,6 +422,11 @@
   .header {
     &__box-link {
       text-align: right;
+    }
+  }
+  .menu {
+    &__item {
+      margin: 24px 0;
     }
   }
 }

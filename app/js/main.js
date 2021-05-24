@@ -16,6 +16,16 @@ $(function () {
   });
 
   //
+  $(document).ready(function () {
+    $(".footer-popup").click(function () {
+      $(".footer-pop").fadeIn(300);
+    });
+    $(".footer-pop__close").click(function () {
+      $(".footer-pop").fadeOut(300);
+    });
+  });
+
+  //
   $(".menu-btn").click(function (event) {
     $(".menu-btn, .menu__list ").toggleClass("active");
     $("body").toggleClass("lock");

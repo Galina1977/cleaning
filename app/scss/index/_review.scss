@@ -1,0 +1,33 @@
+.review {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 30%;
+    transform: translateX(-30%);
+    cursor: pointer;
+    width: 25px;
+    height: 46px;
+    z-index: 15;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    right: 97%;
+  }
+}
+
+@media (max-width: 360px) {
+  .review {
+    padding: 55px 0;
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}

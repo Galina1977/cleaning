@@ -99,6 +99,7 @@
 
 @media (max-width: 1200px) {
   .about {
+    padding-top: 120px;
     &__title {
       margin-bottom: 30px;
     }
@@ -136,7 +137,7 @@
 
 @media (max-width: 576px) {
   .about {
-    padding-top: 160px;
+    padding-top: 120px;
     &__number {
       margin-bottom: 5px;
     }
@@ -159,7 +160,7 @@
 
 @media (max-width: 360px) {
   .about {
-    padding-top: 140px;
+    padding-top: 70px;
     &__title {
       margin-bottom: 17px;
     }

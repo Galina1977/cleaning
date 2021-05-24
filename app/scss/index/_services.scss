@@ -1,5 +1,5 @@
 .services {
-  padding: 120px 0 75px;
+  padding: 185px 0 90px;
   &__title {
     text-align: center;
     margin-bottom: 60px;
@@ -95,6 +95,7 @@
 
 @media (max-width: 1200px) {
   .services {
+    padding: 140px 0 70px;
     &__wrapper {
       justify-content: center;
     }

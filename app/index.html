@@ -103,22 +103,15 @@
                 <a class="menu__link" href="#specialist">Специалисты</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Отзывы</a>
+                <a class="menu__link" href="#review">Отзывы</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
+                <a class="menu__link" href="#footer">Контакты</a>
               </li>
             </ul>
           </nav>
         </div>
         <div class="header__bottom-inner">
-          <div class="header__arrows">
-            <a class="header__arrows-link" href="#about">
-              <svg class="header__arrows-svg">
-                <use xlink:href="images/icons/header_arrow.svg#header_arrow"></use>
-              </svg>
-            </a>
-          </div>
           <div class="header__box-link">
             <a class="header__link" href="#">Хотите помыть окна?</a>
           </div>
@@ -652,7 +645,114 @@
       </div>
     </div>
     <!--  -->
+    <div id="review" class="review">
+      <div class="container">
+        <div class="review__title title">
+          Что блоггеры и звезды говорят о нас?
+        </div>
+        <div class="process__slider">
+          <div class="process__item">
+            <img class="process__img" src="images/process/5.jpg" alt="Процесс наших работ">
+          </div>
+          <div class="process__item">
+            <img class="process__img" src="images/process/6.jpg" alt="Процесс наших работ">
+          </div>
+          <div class="process__item">
+            <img class="process__img" src="images/process/7.jpg" alt="Процесс наших работ">
+          </div>
+          <div class="process__item">
+            <img class="process__img" src="images/process/8.jpg" alt="Процесс наших работ">
+          </div>
+          <div class="process__item">
+            <img class="process__img" src="images/process/5.jpg" alt="Процесс наших работ">
+          </div>
+          <div class="process__item">
+            <img class="process__img" src="images/process/6.jpg" alt="Процесс наших работ">
+          </div>
+          <div class="process__item">
+            <img class="process__img" src="images/process/7.jpg" alt="Процесс наших работ">
+          </div>
+          <div class="process__item">
+            <img class="process__img" src="images/process/8.jpg" alt="Процесс наших работ">
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__wrapper">
+          <a class="logo">
+            <img class="logo__img" src="images/header/logo.png" alt="Чистая фея">
+          </a>
+          <div class="footer__box-info">
+            <p class="footer__text">
+              Наш офис:
+            </p>
+            <a class="footer__link  footer__link--address" href="#!">г. Одесса, <br> Французский
+              бульвар, д.22</a>
+            <a class="footer__link footer__link--mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
+          </div>
+          <div class="header__box-info">
+            <a class="header__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
+          </div>
+          <div class="footer-popup">
+            <button class="button" type="button" title="Всплывающее окно popup">Оформить заявку</button>
+          </div>
+          <div class="footer-pop">
+            <div class="footer-pop__inner">
+              <a class="footer-pop__close" href="#">
+                <svg class="footer-pop__close-svg">
+                  <use xlink:href="images/icons/close.svg#close"></use>
+                </svg>
+              </a>
+              <div class="footer-pop__title">Оформить заявку</div>
+              <div class="footer-pop__item">
+                <img class="footer-pop__img footer-pop__img--1" src="images/popup/1.png" alt="Дом">
+                <p class="footer-pop__text footer-pop__text--1"><span>Скидка</span> на мойку окон <span>50 % </span> при заказе уборки коттеджа </p>
+              </div>
+              <div class="footer-pop__item">
+                <img class="footer-pop__img footer-pop__img--2" src="images/popup/2.png" alt="Уборщица">
+                <p class="footer-pop__text footer-pop__text--2"><span>Скидка</span> на мойку окон <span>20 % </span> при заказе
+                  любого вида уборки </p>
+              </div>
+              <div class="footer-pop__item">
+                <img class="footer-pop__img footer-pop__img--3" src="images/popup/3.png" alt="Инвентарь для уборки">
+                <p class="footer-pop__text footer-pop__text--3"><span>Скидка </span> на
+                  первый заказ <span>15 % </span></p>
+              </div>
+              <div class="footer-pop__item">
+                <img class="footer-pop__img footer-pop__img--4" src="images/popup/4.png" alt="Подарок">
+                <p class="footer-pop__text footer-pop__text--4"><span>Скидка </span> на
+                  День Рождения <span>20 % </span></p>
+              </div>
+              <form class="form" action="#" autocomplete="on">
+                <label>Ваш е-маил
+                  <input class="form__input" type="text" name="еmail" placeholder="Ваш е-маил *" required>
+                </label>
+                <label>Ваш имя
+                  <input class="form__input" type="text" name="name" placeholder="Ваш имя">
+                </label>
+                <label for="message">Ваше сообщение</label>
+                <textarea id="message" class="form__textarea" name="message" placeholder="Ваше сообщение" spellcheck="true"></textarea>
+                <div class="form__box-button">
+                  <button class="form__button" type="submit">Отправить</button>
+                </div>
+                <label class="form__label-checked">
+                  <input class="filter-style" type="checkbox" required>
+                  Даю своё согласие на обработку <span>персональных данных</span>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">Copyright © 2017 - 2019 «Чистая Фея» Клининг</p>
+      </div>
+    </div>
+  </footer>
   <script src="js/main.min.js"></script>
   <!-- ©Верстка сделана Пенер Галиной 10 мая 2021 года -->
   <!-- email: galyapener@mail.ru -->
