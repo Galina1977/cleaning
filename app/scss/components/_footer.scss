@@ -8,13 +8,13 @@
   &__box-info {
     margin-left: 100px;
     padding-right: 75px;
+    color: #000;
     border-right: 1px solid rgba(#000, 0.07);
   }
   &__text {
     @extend%roboto-700;
     font-size: 20px;
     line-height: 25px;
-    color: #000;
     margin-bottom: 20px;
   }
   &__link {
