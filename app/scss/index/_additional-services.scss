@@ -137,6 +137,9 @@
 
 @media (max-width: 360px) {
   .additional-services {
+    &__item {
+      padding: 100px 5px 20px 5px;
+    }
     .btn {
       padding: 18px 40px;
     }

@@ -72,3 +72,12 @@
     }
   }
 }
+
+@media (max-width: 360px) {
+  .process {
+    padding-top: 25px;
+    &__title {
+      margin-bottom: 35px;
+    }
+  }
+}

@@ -1,9 +1,11 @@
 .logo {
   display: block;
+  width: 169px;
+  height: 169px;
   z-index: 10;
   &__img {
-    width: 169px;
-    max-height: 169px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
   }
 }
