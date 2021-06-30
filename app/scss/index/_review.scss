@@ -23,11 +23,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .review {
+    padding: 60px 0;
+  }
+}
+
 @media (max-width: 360px) {
   .review {
-    padding: 55px 0;
+    padding: 45px 0;
     &__title {
-      margin-bottom: 30px;
+      margin-bottom: 0;
     }
   }
 }

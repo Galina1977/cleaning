@@ -17,33 +17,30 @@
         <use xlink:href="images/icons/arrow-circle.svg#arrow-circle"></use>
       </svg>
     </a>
-    <div class="header__top">
+    <div class="header-top">
       <div class="container">
-        <div class="header__top-wrapper">
+        <div class="header-top__wrapper">
           <a class="logo">
             <img class="logo__img" src="images/header/logo.png" alt="Чистая фея">
           </a>
-          <div class="header__top-inner">
-            <p class="header__text">
+          <div class="header-top__inner">
+            <p class="header-top__text">
               Сеть клининговых центров <span> по Москве и МО </span>
             </p>
-            <div class="header__box-info">
-              <a class="header__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
-              <a class="header__mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
+            <div class="header-top__box-info">
+              <a class="header-top__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
+              <a class="header-top__mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
             </div>
-            <button class="menu-btn" type="button">
-              <span></span>
-            </button>
             <div class="popup">
               <button class="button" type="button" title="Всплывающее окно popup">Заказать звонок </button>
             </div>
             <div class="pop">
+              <a class="pop__close" href="#">
+                <svg class="pop__close-svg">
+                  <use xlink:href="images/icons/close.svg#close"></use>
+                </svg>
+              </a>
               <div class="pop__inner">
-                <a class="pop__close" href="#">
-                  <svg class="pop__close-svg">
-                    <use xlink:href="images/icons/close.svg#close"></use>
-                  </svg>
-                </a>
                 <div class="pop__title">Заказать звонок</div>
                 <div class="pop__item">
                   <img class="pop__img pop__img--1" src="images/popup/1.png" alt="Дом">
@@ -80,75 +77,78 @@
                   </label>
                 </form>
               </div>
+              <div class="bg-overlay"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="header__banner" style="background-image: url(images/header/fon_bg.jpg);">
+    <div class="header-bottom" style="background-image: url(images/header/fon_bg.jpg);">
       <div class="container">
-        <div class="header__box-menu">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link menu__link--active" href="#">Главная</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#about">О нас</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#services">Услуги</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#specialist">Специалисты</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#review">Отзывы</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#footer">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="header-bottom__box-menu">
+          <div class="header-bottom__mobile-overflow">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#about">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#services">Услуги</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#specialist">Специалисты</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#review">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#footer">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="header__bottom-inner">
-          <div class="header__box-link">
-            <a class="header__link" href="#">Хотите помыть окна?</a>
-          </div>
-          <div class="social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img social__img--whatsapp" src="images/header/whatsapp.svg" alt="">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img social__img--instagram" src="images/header/instagram.svg" alt="">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img social__img--viber" src="images/header/viber.svg" alt="">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img social__img--telegram" src="images/header/telegram.svg" alt="">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img social__img--vk" src="images/header/vk.svg" alt="">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img social__img--facebook" src="images/header/facebook.svg" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div class="header-bottom__inner">
+        <div class="header-bottom__box-link">
+          <a class="header-bottom__link" href="#">Хотите помыть окна?</a>
+        </div>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img social__img--whatsapp" src="images/header/whatsapp.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img social__img--instagram" src="images/header/instagram.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img social__img--viber" src="images/header/viber.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img social__img--telegram" src="images/header/telegram.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img social__img--vk" src="images/header/vk.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img social__img--facebook" src="images/header/facebook.svg" alt="">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -694,19 +694,19 @@
               бульвар, д.22</a>
             <a class="footer__link footer__link--mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
           </div>
-          <div class="header__box-info">
-            <a class="header__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
+          <div class="header-top__box-info">
+            <a class="header-top__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
           </div>
           <div class="footer-popup">
             <button class="button" type="button" title="Всплывающее окно popup">Оформить заявку</button>
           </div>
           <div class="footer-pop">
+            <a class="footer-pop__close" href="#">
+              <svg class="footer-pop__close-svg">
+                <use xlink:href="images/icons/close.svg#close"></use>
+              </svg>
+            </a>
             <div class="footer-pop__inner">
-              <a class="footer-pop__close" href="#">
-                <svg class="footer-pop__close-svg">
-                  <use xlink:href="images/icons/close.svg#close"></use>
-                </svg>
-              </a>
               <div class="footer-pop__title">Оформить заявку</div>
               <div class="footer-pop__item">
                 <img class="footer-pop__img footer-pop__img--1" src="images/popup/1.png" alt="Дом">
@@ -745,6 +745,7 @@
                 </label>
               </form>
             </div>
+            <div class="bg-overlay"></div>
           </div>
         </div>
       </div>

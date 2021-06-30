@@ -22,10 +22,11 @@
   }
 }
 
-// @media (max-width: 768px) {
-//   .scroller {
-//     &__arrow {
-//       display: none;
-//     }
-//   }
-// }
+@media (max-width: 768px) {
+  .scroller {
+    &__arrow {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

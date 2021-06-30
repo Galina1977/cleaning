@@ -137,6 +137,11 @@
     &__box-btn {
       left: 3px;
       bottom: -95px;
+      .btn {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
     &__item {
       padding: 90px 15px 55px 15px;

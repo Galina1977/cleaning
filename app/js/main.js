@@ -1,16 +1,10 @@
 $(function () {
-  $(document).ready(function () {
-    $(".button").click(function () {
-      $(".pop-up").toggleClass("show");
-    });
-  });
-
   //
   $(document).ready(function () {
     $(".popup").click(function () {
       $(".pop").fadeIn(300);
     });
-    $(".pop__close").click(function () {
+    $(".pop__close, .bg-overlay").click(function () {
       $(".pop").fadeOut(300);
     });
   });
@@ -20,15 +14,9 @@ $(function () {
     $(".footer-popup").click(function () {
       $(".footer-pop").fadeIn(300);
     });
-    $(".footer-pop__close").click(function () {
+    $(".footer-pop__close, .bg-overlay").click(function () {
       $(".footer-pop").fadeOut(300);
     });
-  });
-
-  //
-  $(".menu-btn").click(function (event) {
-    $(".menu-btn, .menu__list ").toggleClass("active");
-    $("body").toggleClass("lock");
   });
 
   //
