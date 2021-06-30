@@ -17,10 +17,6 @@
     border: 2px dashed #c75a9d;
     border-radius: 15px;
     text-align: center;
-    transition: transform 0.9s;
-    &:hover {
-      transform: scale(1.06);
-    }
   }
   &__number {
     @extend%roboto-700;

@@ -18,11 +18,6 @@
     text-align: center;
     color: #000;
     margin-bottom: 20px;
-    transition: all 0.8s;
-    &:hover {
-      transform: scale(1.06);
-      box-shadow: 0 10px 10px 0 rgba(#000, 0.15);
-    }
     &::before {
       content: "";
       background-image: url("../images/additional-services/1.png");
