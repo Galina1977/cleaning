@@ -21,6 +21,9 @@
         @extend%roboto-700;
       }
     }
+    &__box-info-mobile {
+      display: none;
+    }
     &__box-info {
       max-width: 215px;
       @extend%roboto-700;
@@ -258,21 +261,48 @@
     padding-bottom: 90px;
     &-top {
       &__wrapper {
-        padding: 15px 0;
+        padding: 0;
       }
       &__box-info {
+        display: none;
+        &::before {
+          top: 0;
+          left: 30px;
+        }
+      }
+      &__box-info-mobile {
+        display: block;
+      }
+      &__tel {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 3px;
+      }
+      &__text {
+        display: none;
+      }
+    }
+    &-bottom {
+      min-height: 340px;
+      &__box-menu {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        position: fixed;
+        background-color: #f9f197;
+        padding: 6px 0;
+        left: 0;
+        right: 50%;
+        width: 100%;
+        z-index: 60;
       }
       &__burger {
         position: relative;
         width: 32px;
         height: 22px;
-        top: 10px;
+        top: 0;
         left: 0;
-        z-index: 3;
+        z-index: 40;
         &::before,
         &::after {
           content: "";
@@ -311,12 +341,6 @@
         transform: scale(0);
       }
     }
-    &-bottom {
-      min-height: 340px;
-      &__mobile-overflow {
-        width: 1000px;
-      }
-    }
   }
   .menu {
     position: fixed;
@@ -324,13 +348,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #c75a9d;
+    background-color: #f9f197;
+    border-radius: 0;
     padding-top: 50px;
     transition: all 0.8s ease 0s;
     overflow: auto;
-    z-index: 5;
+    z-index: 30;
     &.active {
-      top: 132px;
+      top: 0;
     }
     &__list {
       flex-direction: column;
@@ -349,6 +374,7 @@
       padding: 5px 1px;
       font-size: 22px;
       line-height: 25px;
+      color: #000;
     }
   }
   .social {
@@ -358,26 +384,6 @@
 
 @media (max-width: 576px) {
   .header {
-    &-top {
-      &__inner {
-        align-items: center;
-        text-align: center;
-      }
-      &__wrapper {
-        flex-wrap: nowrap;
-      }
-      &__text {
-        display: none;
-      }
-      &__box-info {
-        padding-left: 20px;
-      }
-      &__tel {
-        font-size: 20px;
-        line-height: 23px;
-        margin-bottom: 3px;
-      }
-    }
     &-bottom {
       min-height: 190px;
       &__box-link {
@@ -389,11 +395,6 @@
         font-size: 20px;
         line-height: 40px;
       }
-    }
-  }
-  .menu {
-    &.active {
-      top: 95px;
     }
   }
 }
