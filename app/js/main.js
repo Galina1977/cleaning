@@ -1,4 +1,8 @@
 $(function () {
+  $(".header-top__burger").click(function (event) {
+    $(".header-top__burger, .menu ").toggleClass("active");
+    $("body").toggleClass("lock");
+  });
   //
   $(document).ready(function () {
     $(".popup").click(function () {

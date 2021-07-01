@@ -251,11 +251,64 @@
 }
 
 @media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
   .header {
     padding-bottom: 90px;
     &-top {
       &__wrapper {
         padding: 15px 0;
+      }
+      &__box-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__burger {
+        position: relative;
+        width: 32px;
+        height: 22px;
+        top: 10px;
+        left: 0;
+        z-index: 3;
+        &::before,
+        &::after {
+          content: "";
+          background-color: #000;
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+        &::before {
+          top: 0;
+        }
+        &::after {
+          bottom: 0;
+        }
+        span {
+          background-color: #000;
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          left: 0;
+          top: 9px;
+          transition: all 0.3s ease 0s;
+        }
+      }
+      .header-top__burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+      .header-top__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+      .header-top__burger.active span {
+        transform: scale(0);
       }
     }
     &-bottom {
@@ -263,14 +316,40 @@
       &__mobile-overflow {
         width: 1000px;
       }
-      &__box-menu {
-        text-align: start;
-        overflow-x: scroll;
-      }
     }
   }
   .menu {
-    padding: 10px 35px;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c75a9d;
+    padding-top: 50px;
+    transition: all 0.8s ease 0s;
+    overflow: auto;
+    z-index: 5;
+    &.active {
+      top: 132px;
+    }
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    &__item {
+      margin: 15px 0;
+      & + & {
+        margin-left: 0;
+      }
+    }
+    &__link {
+      padding: 5px 1px;
+      font-size: 22px;
+      line-height: 25px;
+    }
   }
   .social {
     display: none;
@@ -291,10 +370,7 @@
         display: none;
       }
       &__box-info {
-        padding-left: 0;
-        &::before {
-          display: none;
-        }
+        padding-left: 20px;
       }
       &__tel {
         font-size: 20px;
@@ -316,11 +392,8 @@
     }
   }
   .menu {
-    padding: 5px 35px;
-    &__item {
-      & + & {
-        margin-left: 30px;
-      }
+    &.active {
+      top: 95px;
     }
   }
 }
