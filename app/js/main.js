@@ -137,5 +137,4 @@ $(function () {
     $(this).next().slideToggle(500);
   });
   //
-  new WOW().init();
 });
