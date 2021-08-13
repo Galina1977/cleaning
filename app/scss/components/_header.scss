@@ -49,15 +49,23 @@
       position: relative;
       z-index: 5;
       margin-top: -91px;
-      &__img {
+      &__box-img {
          max-width: 1920px;
          max-height: 625px;
+      }
+      &__img {
+         max-width: 100%;
+         max-height: 100%;
          object-fit: cover;
       }
-      &__img-mobile {
+      &__box-img-mobile {
          display: none;
          max-width: 640px;
          max-height: 386px;
+      }
+      &__img-mobile {
+         max-width: 100%;
+         max-height: 100%;
          object-fit: cover;
       }
       &__box-link {
@@ -201,10 +209,10 @@
 @media (max-width: 450px) {
    .header {
       &-bottom {
-         &__img {
+         &__box-img {
             display: none;
          }
-         &__img-mobile {
+         &__box-img-mobile {
             display: block;
          }
       }
