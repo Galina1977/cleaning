@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="pobots" content="none">
+   <meta name="Author" content="Galina Pener">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Чистая фея</title>
+   <link rel="shortcut icon" href="/images/favicon.ico" type="image/favicon.ico">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   <header class="header">
+      <a class="scroller" id="scroller" href="#">
+         <svg class="scroller__arrow-circle">
+            <use xlink:href="images/icons/arrow-circle.svg#arrow-circle"></use>
+         </svg>
+      </a>
+      <div class="container">
+         <div class="header-top">
+            <div class="header-top__logo">
+               <a class="logo">
+                  <img class="logo__img" src="images/header/logo.png" alt="Чистая фея">
+               </a>
+            </div>
+            <div class="header-top__wrapper">
+               <div class="header-top__inner">
+                  <div class="header-top__info-text">
+                     <p class="header-top__text">
+                        Сеть клининговых центров <span> по Москве и МО </span>
+                     </p>
+                  </div>
+                  <div class="header-top__info">
+                     <div class="feedback">
+                        <a class="feedback__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
+                        <a class="feedback__mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
+                     </div>
+                  </div>
+                  <div class="header-top__popup">
+                     <div class="popup">
+                        <button class="button" type="button" title="Всплывающее окно popup">Заказать звонок </button>
+                     </div>
+                     <div class="pop">
+                        <a class="pop__close" href="#">
+                           <svg class="pop__close-svg">
+                              <use xlink:href="images/icons/close.svg#close"></use>
+                           </svg>
+                        </a>
+                        <div class="pop__inner">
+                           <div class="pop__title">Заказать звонок</div>
+                           <div class="pop__item">
+                              <img class="pop__img pop__img--1" src="images/popup/1.png" alt="Дом">
+                              <p class="pop__text pop__text--1"><span>Скидка</span> на мойку окон <span>50 % </span> при заказе уборки коттеджа </p>
+                           </div>
+                           <div class="pop__item">
+                              <img class="pop__img pop__img--2" src="images/popup/2.png" alt="Уборщица">
+                              <p class="pop__text pop__text--2"><span>Скидка</span> на мойку окон <span>20 % </span> при заказе
+                                 любого вида уборки </p>
+                           </div>
+                           <div class="pop__item">
+                              <img class="pop__img pop__img--3" src="images/popup/3.png" alt="Инвентарь для уборки">
+                              <p class="pop__text pop__text--3"><span>Скидка </span> на
+                                 первый заказ <span>15 % </span></p>
+                           </div>
+                           <div class="pop__item">
+                              <img class="pop__img pop__img--4" src="images/popup/4.png" alt="Подарок">
+                              <p class="pop__text pop__text--4"><span>Скидка </span> на
+                                 День Рождения <span>20 % </span></p>
+                           </div>
+                           <form class="form" action="#" autocomplete="on">
+                              <label>Ваш е-маил
+                                 <input class="form__input" type="text" name="еmail" placeholder="Ваш е-маил *" required>
+                              </label>
+                              <label>Ваш имя
+                                 <input class="form__input" type="text" name="name" placeholder="Ваш имя">
+                              </label>
+                              <div class="form__box-button">
+                                 <button class="form__button" type="submit">Отправить</button>
+                              </div>
+                              <label class="form__label-checked">
+                                 <input class="filter-style" type="checkbox" required>
+                                 Даю своё согласие на обработку <span>персональных данных</span>
+                              </label>
+                           </form>
+                        </div>
+                        <div class="bg-overlay"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-top__menu">
+                  <button class="header-top__burger" type="button">
+                     <span></span>
+                  </button>
+                  <nav class="menu">
+                     <ul class="menu__list">
+                        <li class="menu__item">
+                           <a class="menu__link" href="#">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                           <a class="menu__link" href="#about">О нас</a>
+                        </li>
+                        <li class="menu__item">
+                           <a class="menu__link" href="#services">Услуги</a>
+                        </li>
+                        <li class="menu__item">
+                           <a class="menu__link" href="#specialist">Специалисты</a>
+                        </li>
+                        <li class="menu__item">
+                           <a class="menu__link" href="#review">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                           <a class="menu__link" href="#footer">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                           <div class="header-top__text-mobile">
+                              <p class="header-top__text">
+                                 Сеть клининговых центров <span> по Москве и МО </span>
+                              </p>
+                           </div>
+                        </li>
+                        <li class="menu__item">
+                           <div class="header-top__info-mobile">
+                              <div class="feedback">
+                                 <a class="feedback__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
+                                 <a class="feedback__mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="menu__item">
+                           <div class="header-top__logo-mobile">
+                              <a class="logo">
+                                 <img class="logo__img" src="images/header/logo.png" alt="Чистая фея">
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="header-bottom">
+         <div class="header-bottom__box-img">
+            <img class="header-bottom__img" src="images/header/fon_bg.webp" alt="Чистая фея">
+         </div>
+         <div class="header-bottom__box-img-mobile">
+            <img class="header-bottom__img-mobile" src="images/header/header-bg-images.webp" alt="Чистая фея">
+         </div>
+         <div class="header-bottom__inner">
+            <div class="header-bottom__box-link">
+               <a class="header-bottom__link" href="#">Хотите помыть окна?</a>
+            </div>
+            <div class="header-bottom__box-social">
+               <div class="social">
+                  <ul class="social__list">
+                     <li class="social__item">
+                        <a class="social__link" href="#">
+                           <img class="social__img social__img--whatsapp" src="images/header/whatsapp.svg" alt="">
+                        </a>
+                     </li>
+                     <li class="social__item">
+                        <a class="social__link" href="#">
+                           <img class="social__img social__img--instagram" src="images/header/instagram.svg" alt="">
+                        </a>
+                     </li>
+                     <li class="social__item">
+                        <a class="social__link" href="#">
+                           <img class="social__img social__img--viber" src="images/header/viber.svg" alt="">
+                        </a>
+                     </li>
+                     <li class="social__item">
+                        <a class="social__link" href="#">
+                           <img class="social__img social__img--telegram" src="images/header/telegram.svg" alt="">
+                        </a>
+                     </li>
+                     <li class="social__item">
+                        <a class="social__link" href="#">
+                           <img class="social__img social__img--vk" src="images/header/vk.svg" alt="">
+                        </a>
+                     </li>
+                     <li class="social__item">
+                        <a class="social__link" href="#">
+                           <img class="social__img social__img--facebook" src="images/header/facebook.svg" alt="">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="main">
+      <div id="about" class="about">
+         <div class="container">
+            <div class="about__inner">
+               <div class="about__title title">Чистая фея в цифрах</div>
+               <div class="about__specification">
+                  <div class="about__item">
+                     <span class="about__number">2 года</span>
+                     <span class="about__text">на рынке клининга</span>
+                  </div>
+                  <div class="about__item">
+                     <span class="about__number">более 15 000</span>
+                     <span class="about__text">обработанных заявок</span>
+                  </div>
+                  <div class="about__item">
+                     <span class="about__number">20 000 кв.м</span>
+                     <span class="about__text">ежедневной уборки</span>
+                  </div>
+                  <div class="about__item">
+                     <span class="about__number">20 человек</span>
+                     <span class="about__text">наш персонал</span>
+                  </div>
+               </div>
+               <div class="about__content">
+                  <div class="about__video" style="background-image: url(images/about/video.webp);">
+                     <a class="about__video-play" data-fancybox href="https://www.youtube.com/watch?v=HGUQmTyUurI"></a>
+                  </div>
+                  <div class="about__price">
+                     <div class="about__price-inner">
+                        <p class="about__desc">Получить полный прайс нашей компании</p>
+                        <form class="about__form form" action="#" autocomplete="on">
+                           <label>Ваш е-маил
+                              <input class="form__input" type="text" name="еmail" placeholder="Ваш е-маил" required>
+                           </label>
+                           <div class="form__box-button">
+                              <button class="form__button" type="submit">Отправить</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="services" class="services">
+         <div class="container">
+            <div class="services__title title">Наши услуги</div>
+            <div class="services__wrapper">
+               <div class="services__item">
+                  <span class="services__subject">Генеральная уборка</span>
+                  <span class="services__price">от 3000 руб.</span>
+                  <div class="services__box-btn">
+                     <button class="btn" type="button">Заказать</button>
+                     <button class="btn btn--transparent" type="button">Подробнее</button>
+                  </div>
+               </div>
+               <div class="services__item services__item--2">
+                  <span class="services__subject">Уборка после ремонта</span>
+                  <span class="services__price">от 100 руб./м2 </span>
+                  <div class="services__box-btn">
+                     <button class="btn" type="button">Заказать</button>
+                     <button class="btn btn--transparent" type="button">Подробнее</button>
+                  </div>
+               </div>
+               <div class="services__item services__item--3">
+                  <span class="services__subject">Поддерживающая уборка</span>
+                  <span class="services__price">от 2000 руб.</span>
+                  <div class="services__box-btn">
+                     <button class="btn" type="button">Заказать</button>
+                     <button class="btn btn--transparent" type="button">Подробнее</button>
+                  </div>
+               </div>
+               <div class="services__item services__item--4">
+                  <span class="services__subject">Мойка окон</span>
+                  <span class="services__price">от 550 руб.</span>
+                  <div class="services__box-btn">
+                     <button class="btn" type="button">Заказать</button>
+                     <button class="btn btn--transparent" type="button">Подробнее</button>
+                  </div>
+               </div>
+               <div class="services__item services__item--5">
+                  <span class="services__subject">VIP уборка</span>
+                  <span class="services__price">от 150 руб./ м2.</span>
+                  <div class="services__box-btn">
+                     <button class="btn" type="button">Заказать</button>
+                     <button class="btn btn--transparent" type="button">Подробнее</button>
+                  </div>
+               </div>
+               <div class="services__item services__item--6">
+                  <span class="services__subject">Химчистка</span>
+                  <span class="services__price">от 100 руб./ м2</span>
+                  <div class="services__box-btn">
+                     <button class="btn" type="button">Заказать</button>
+                     <button class="btn btn--transparent" type="button">Подробнее</button>
+                  </div>
+               </div>
+               <div class="services__item services__item--7">
+                  <span class="services__subject">Уборка домов / коттеджей</span>
+                  <span class="services__price">от 100 руб./ м2</span>
+                  <div class="services__box-btn">
+                     <button class="btn" type="button">Заказать</button>
+                     <button class="btn btn--transparent" type="button">Подробнее</button>
+                  </div>
+               </div>
+               <div class="services__item services__item--8">
+                  <span class="services__subject">Домашний персонал</span>
+                  <span class="services__price">от 500 руб./ час</span>
+                  <div class="services__box-btn">
+                     <button class="btn" type="button">Заказать</button>
+                     <button class="btn btn--transparent" type="button">Подробнее</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="slogan">
+         <div class="container">
+            <div class="slogan__title">
+               Клининг - искусство чистоты
+            </div>
+            <div class="slogan__row">
+               <div class="slogan__box-text">
+                  <p class="slogan__text">
+                     Наша компания предлагает высококачественную уборку жилых помещений любой сложности и объёма!
+                  </p>
+                  <p class="slogan__text">
+                     Нам доверяют медийные лица , блоггеры и дизайнеры модной одежды! А так же
+                     мамочки и бизнес леди,которым так не хватает времени!
+                  </p>
+                  <p class="slogan__text">
+                     Мы рады видеть все новых клиентов!
+                  </p>
+                  <p class="slogan__text">
+                     Мы гордимся тем, что в нашем коллективе работают только специаоисты своего
+                     дела, которые любят свою работу, и готовы стараться для своих клиентов в любое
+                     время и суток!
+                  </p>
+                  <p class="slogan__text">
+                     Ценности нашей компании очень просты: довольный клиент - превыше всего!
+                  </p>
+                  <p class="slogan__text">
+                     Для нас это мотивация, и с каждым днем мы становимся лучше именно для Вас!
+                  </p>
+                  <p class="slogan__text">С любовью, Ваша «Чистая Фея»</p>
+               </div>
+               <div class="slogan__box-item">
+                  <div class="slogan__item">
+                     <p class="slogan__desc">Наши средства и инвентарь</p>
+                  </div>
+                  <div class="slogan__item slogan__item--2">
+                     <p class="slogan__desc">Гарантия качества</p>
+                  </div>
+                  <div class="slogan__item slogan__item--3">
+                     <p class="slogan__desc">Без предоплаты</p>
+                  </div>
+                  <div class="slogan__item slogan__item--4">
+                     <p class="slogan__desc">Уборка без вашего присутствия</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="discount">
+         <div class="container">
+            <div class="discount__inner">
+               <div class="discount__item">
+                  <p class="discount__text">Скидка <span>на День Рождения</span> 20 %</p>
+               </div>
+               <div class="discount__item discount__item--2">
+                  <p class="discount__text">Скидка <span>на первый заказ</span> 15 %</p>
+               </div>
+               <div class="discount__item discount__item--3">
+                  <p class="discount__text">Скидка <span>на мойку окон</span> 50 % <span>при заказе
+                        уборки коттеджа</span></p>
+               </div>
+               <div class="discount__item discount__item--4">
+                  <p class="discount__text">Скидка <span>на мойку окон</span> 15 % <span>при заказе
+                        любого вида уборки</span></p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="additional-services">
+         <div class="container">
+            <div class="additional-services__wrapper">
+               <div class="additional-services__title title">Дополнительные услуги</div>
+               <div class="additional-services__inner">
+                  <a class="additional-services__item" href="#!">
+                     <span class="additional-services__subject">Мойка бытовой техники внутри</span>
+                     <span class="additional-services__price">300 р./ ед.</span>
+                  </a>
+                  <a class="additional-services__item additional-services__item--2" href="#!">
+                     <span class="additional-services__subject">Мойка кухонного
+                        гарнитура внутри</span>
+                     <span class="additional-services__price">500 р.</span>
+                  </a>
+                  <a class="additional-services__item additional-services__item--3" href="#!">
+                     <span class="additional-services__subject">Чистка люстр</span>
+                     <span class="additional-services__price">от 500р за шт\
+                        хрустальные от 1000р</span>
+                  </a>
+                  <a class="additional-services__item additional-services__item--4" href="#!">
+                     <span class="additional-services__subject">Глажка белья</span>
+                     <span class="additional-services__price">(полотенца
+                        и постельное белье)- 500р час</span>
+                  </a>
+                  <a class="additional-services__item additional-services__item--5" href="#!">
+                     <span class="additional-services__subject">Выезд доп. специалиста</span>
+                     <span class="additional-services__price">1000 р. на всю уборку</span>
+                  </a>
+                  <a class="additional-services__item additional-services__item--6" href="#!">
+                     <span class="additional-services__subject">Стирка и навеска штор
+                        и гардин</span>
+                     <span class="additional-services__price">от 500 р./ окно</span>
+                  </a>
+                  <a class="additional-services__item additional-services__item--7" href="#!">
+                     <span class="additional-services__subject">Эко уборка</span>
+                     <span class="additional-services__price">+40% к стоимости</span>
+                  </a>
+                  <a class="additional-services__item additional-services__item--8" href="#!">
+                     <span class="additional-services__subject">Выезд с
+                        оборудованием</span>
+                     <span class="additional-services__price">500 р. Москва 1000 р. МО</span>
+                  </a>
+                  <a class="additional-services__item additional-services__item--9" href="#!">
+                     <span class="additional-services__subject">Мойка окон</span>
+                     <span class="additional-services__price">от 500 р.</span>
+                  </a>
+                  <a class="additional-services__item additional-services__item--10" href="#!">
+                     <span class="additional-services__subject">Доставка ключенй</span>
+                     <span class="additional-services__price">от 500 р.</span>
+                  </a>
+               </div>
+               <div class="additional-services__btn">
+                  <a class="btn" href="#!">Посмотреть ещё услуги</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="specialist" class="specialist">
+         <div class="container">
+            <div class="specialist__title title">
+               Специалисты своего дела
+            </div>
+            <div class="specialist__slider">
+               <div class="specialist__item">
+                  <img class="specialist__img" src="images/specialist/1.webp" alt="Уборщица Васильева Ольга">
+                  <p class="specialist__name">
+                     Васильева Ольга
+                  </p>
+                  <span class="specialist__rating">
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                  </span>
+                  <span class="specialist__number">
+                     1000 уборок
+                  </span>
+               </div>
+               <div class="specialist__item">
+                  <img class="specialist__img" src="images/specialist/2.webp" alt="Уборщица Люберц Зоя">
+                  <p class="specialist__name">
+                     Люберц Зоя
+                  </p>
+                  <span class="specialist__rating">
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                  </span>
+                  <span class="specialist__number">
+                     980 уборок
+                  </span>
+               </div>
+               <div class="specialist__item">
+                  <img class="specialist__img" src="images/specialist/3.webp" alt="Уборщица Заяцева Полина">
+                  <p class="specialist__name">
+                     Заяцева Полина
+                  </p>
+                  <span class="specialist__rating">
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                  </span>
+                  <span class="specialist__number">
+                     800 уборок
+                  </span>
+               </div>
+               <div class="specialist__item">
+                  <img class="specialist__img" src="images/specialist/4.webp" alt="Уборщица Попова Валентина">
+                  <p class="specialist__name">
+                     Попова Валентина
+                  </p>
+                  <span class="specialist__rating">
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                  </span>
+                  <span class="specialist__number">
+                     500 уборок
+                  </span>
+               </div>
+               <div class="specialist__item">
+                  <img class="specialist__img" src="images/specialist/5.webp" alt="Уборщица Анохина Мария">
+                  <p class="specialist__name">
+                     Анохина Мария
+                  </p>
+                  <span class="specialist__rating">
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                     <svg class="specialist__svg">
+                        <use xlink:href="images/icons/favorite.svg#favorite"></use>
+                     </svg>
+                  </span>
+                  <span class="specialist__number">
+                     500 уборок
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="consultation">
+         <div class="container">
+            <div class="consultation__inner">
+               <div class="consultation__box">
+                  <p class="consultation__subject">
+                     Получите бесплатную консультацию и расчет стоимости
+                     любой уборки за <span>60 секунд</span>
+                  </p>
+                  <p class="consultation__text">
+                     Оставьте свои контакты и наш менеджер
+                     свяжется с Вами в течение 1 минуты!
+                  </p>
+               </div>
+               <form class="form" action="#" autocomplete="on">
+                  <label>Ваш имя
+                     <input class="form__input" type="text" name="name" placeholder="Ваш имя">
+                  </label>
+                  <label>Ваш телефон
+                     <input class="form__input" type="tel" name="tel" placeholder="Ваш телефон *" required>
+                  </label>
+                  <div class="form__box-button">
+                     <button class="form__button" type="submit">Рассчитать</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <div class="process">
+         <div class="container">
+            <div class="process__title title">
+               Процесс наших работ
+            </div>
+            <div class="process__slider">
+               <div class="process__item">
+                  <img class="process__img" src="images/process/1.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/2.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/3.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/4.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/1.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/2.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/3.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/4.jpg" alt="Процесс наших работ">
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="question">
+         <div class="container">
+            <div class="question__title title">Часто задаваемые вопросы</div>
+            <div class="question__inner">
+               <div class="question__item">
+                  <p class="question__text">Как сделать заказ?</p>
+                  <button class="question__plus-minus" type="button"></button>
+                  <div class="question__content">Профессиональная уборка помещений с гарантией результата! Разумные цены. Звоните. Доверьте заботу о вашем офисе профессионалам. Оставь заявку на сайте. Гибкие условия работы. Опытные клинеры. Профессиональная химия.</div>
+               </div>
+               <div class="question__item">
+                  <p class="question__text">Сколько людей приедут на уборку?</p>
+                  <button class="question__plus-minus" type="button"></button>
+                  <div class="question__content">Профессиональная уборка помещений с гарантией результата! Разумные цены. Звоните. Доверьте заботу о вашем офисе профессионалам. Оставь заявку на сайте. Гибкие условия работы. Опытные клинеры. Профессиональная химия.</div>
+               </div>
+               <div class="question__item">
+                  <p class="question__text">Нужно ли мне что-то покупать для уборки?</p>
+                  <button class="question__plus-minus" type="button"></button>
+                  <div class="question__content">Профессиональная уборка помещений с гарантией результата! Разумные цены. Звоните. Доверьте заботу о вашем офисе профессионалам. Оставь заявку на сайте. Гибкие условия работы. Опытные клинеры. Профессиональная химия.</div>
+               </div>
+               <div class="question__item">
+                  <p class="question__text">Как производится оплата?</p>
+                  <button class="question__plus-minus" type="button"></button>
+                  <div class="question__content">Профессиональная уборка помещений с гарантией результата! Разумные цены. Звоните. Доверьте заботу о вашем офисе профессионалам. Оставь заявку на сайте. Гибкие условия работы. Опытные клинеры. Профессиональная химия.</div>
+               </div>
+               <div class="question__item">
+                  <p class="question__text">Зачем нужна химчистка ковровых покрытий?</p>
+                  <button class="question__plus-minus" type="button"></button>
+                  <div class="question__content">Профессиональная уборка помещений с гарантией результата! Разумные цены. Звоните. Доверьте заботу о вашем офисе профессионалам. Оставь заявку на сайте. Гибкие условия работы. Опытные клинеры. Профессиональная химия.</div>
+               </div>
+               <div class="question__item">
+                  <p class="question__text">Как быть в случае пропажи или клинер что-то сломает?</p>
+                  <button class="question__plus-minus" type="button"></button>
+                  <div class="question__content">Профессиональная уборка помещений с гарантией результата! Разумные цены. Звоните. Доверьте заботу о вашем офисе профессионалам. Оставь заявку на сайте. Гибкие условия работы. Опытные клинеры. Профессиональная химия.</div>
+               </div>
+               <div class="question__item">
+                  <p class="question__text">Сколько времени занимает уборка?</p>
+                  <button class="question__plus-minus" type="button"></button>
+                  <div class="question__content">Профессиональная уборка помещений с гарантией результата! Разумные цены. Звоните. Доверьте заботу о вашем офисе профессионалам. Оставь заявку на сайте. Гибкие условия работы. Опытные клинеры. Профессиональная химия.</div>
+               </div>
+               <div class="question__item">
+                  <p class="question__text">Кто у Вас работает?</p>
+                  <button class="question__plus-minus" type="button"></button>
+                  <div class="question__content">Профессиональная уборка помещений с гарантией результата! Разумные цены. Звоните. Доверьте заботу о вашем офисе профессионалам. Оставь заявку на сайте. Гибкие условия работы. Опытные клинеры. Профессиональная химия.</div>
+               </div>
+               <div class="question__item">
+                  <p class="question__text">Какие гарантии, что у меня хорошо уберуться?</p>
+                  <button class="question__plus-minus" type="button"></button>
+                  <div class="question__content">Профессиональная уборка помещений с гарантией результата! Разумные цены. Звоните. Доверьте заботу о вашем офисе профессионалам. Оставь заявку на сайте. Гибкие условия работы. Опытные клинеры. Профессиональная химия.</div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="review" class="review">
+         <div class="container">
+            <div class="review__title title">
+               Что блоггеры и звезды говорят о нас?
+            </div>
+            <div class="process__slider">
+               <div class="process__item">
+                  <img class="process__img" src="images/process/5.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/6.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/7.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/8.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/5.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/6.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/7.jpg" alt="Процесс наших работ">
+               </div>
+               <div class="process__item">
+                  <img class="process__img" src="images/process/8.jpg" alt="Процесс наших работ">
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <footer id="footer" class="footer">
+      <div class="container">
+         <div class="footer__top">
+            <div class="footer__wrapper">
+               <a class="logo">
+                  <img class="logo__img" src="images/header/logo.png" alt="Чистая фея">
+               </a>
+               <div class="footer__box-info">
+                  <p class="footer__text">
+                     Наш офис:
+                  </p>
+                  <a class="footer__link  footer__link--address" href="#!">г. Одесса, <br> Французский бульвар, д.22</a>
+                  <a class="footer__link footer__link--mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
+               </div>
+               <div class="feedback">
+                  <a class="feedback__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
+               </div>
+               <div class="footer__box-popup">
+                  <div class="footer-popup">
+                     <button class="button" type="button" title="Всплывающее окно popup">Оформить заявку</button>
+                  </div>
+                  <div class="footer-pop">
+                     <a class="footer-pop__close" href="#">
+                        <svg class="footer-pop__close-svg">
+                           <use xlink:href="images/icons/close.svg#close"></use>
+                        </svg>
+                     </a>
+                     <div class="footer-pop__inner">
+                        <div class="footer-pop__title">Оформить заявку</div>
+                        <div class="footer-pop__item">
+                           <img class="footer-pop__img footer-pop__img--1" src="images/popup/1.png" alt="Дом">
+                           <p class="footer-pop__text footer-pop__text--1"><span>Скидка</span> на мойку окон <span>50 % </span> при заказе уборки коттеджа </p>
+                        </div>
+                        <div class="footer-pop__item">
+                           <img class="footer-pop__img footer-pop__img--2" src="images/popup/2.png" alt="Уборщица">
+                           <p class="footer-pop__text footer-pop__text--2"><span>Скидка</span> на мойку окон <span>20 % </span> при заказе
+                              любого вида уборки </p>
+                        </div>
+                        <div class="footer-pop__item">
+                           <img class="footer-pop__img footer-pop__img--3" src="images/popup/3.png" alt="Инвентарь для уборки">
+                           <p class="footer-pop__text footer-pop__text--3"><span>Скидка </span> на
+                              первый заказ <span>15 % </span></p>
+                        </div>
+                        <div class="footer-pop__item">
+                           <img class="footer-pop__img footer-pop__img--4" src="images/popup/4.png" alt="Подарок">
+                           <p class="footer-pop__text footer-pop__text--4"><span>Скидка </span> на
+                              День Рождения <span>20 % </span></p>
+                        </div>
+                        <form class="form" action="#" autocomplete="on">
+                           <label>Ваш е-маил
+                              <input class="form__input" type="text" name="еmail" placeholder="Ваш е-маил *" required>
+                           </label>
+                           <label>Ваш имя
+                              <input class="form__input" type="text" name="name" placeholder="Ваш имя">
+                           </label>
+                           <label for="message">Ваше сообщение</label>
+                           <textarea id="message" class="form__textarea" name="message" placeholder="Ваше сообщение" spellcheck="true"></textarea>
+                           <div class="form__box-button">
+                              <button class="form__button" type="submit">Отправить</button>
+                           </div>
+                           <label class="form__label-checked">
+                              <input class="filter-style" type="checkbox" required>
+                              Даю своё согласие на обработку <span>персональных данных</span>
+                           </label>
+                        </form>
+                     </div>
+                     <div class="bg-overlay"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__bottom">
+            <p class="footer__copyright">Copyright © 2017 - 2019 «Чистая Фея» Клининг </p>
+         </div>
+      </div>
+   </footer>
+
+   <script src="js/main.min.js"></script>
+   <!-- ©Верстка сделана Пенер Галиной 10 мая 2021 года -->
+   <!-- email: galyapener@mail.ru -->
+</body>
+
+</html>
