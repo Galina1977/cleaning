@@ -1,0 +1,37 @@
+.social {
+   padding: 17px 15px;
+   background-color: #fff;
+   box-shadow: 5px 4px 10px 5px rgba(#000, 0.25);
+   border-radius: 10px;
+   &__item {
+      & + & {
+         margin-top: 10px;
+      }
+   }
+   &__img {
+      width: 42px;
+      height: 42px;
+      transition: transform 0.5s;
+      &--whatsapp,
+      &--instagram,
+      &--viber,
+      &--vk,
+      &--facebook,
+      &--telegram {
+         &:hover {
+            transform: scale(1.09);
+         }
+      }
+      &--vk {
+         width: 43px;
+         height: 43px;
+         &:hover {
+            transform: scale(1.09);
+         }
+      }
+      &--facebook {
+         width: 40px;
+         height: 40px;
+      }
+   }
+}

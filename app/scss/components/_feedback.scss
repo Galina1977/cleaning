@@ -1,0 +1,46 @@
+.feedback {
+   max-width: 215px;
+   @extend%roboto-700;
+   padding-left: 28px;
+   position: relative;
+   &::before {
+      content: "";
+      background-image: url("../images/header/phone.svg");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      fill: #c75a9d;
+   }
+   &__tel {
+      font-size: 22px;
+      line-height: 1.2em;
+      color: $title;
+      transition: color 0.3s;
+      &:focus {
+         color: #ca067f;
+      }
+      &:hover {
+         color: #c75a9d;
+      }
+      &:active {
+         color: #6d6767;
+      }
+   }
+   &__mailto {
+      @extend%roboto-700;
+      line-height: 1.2em;
+      transition: color 0.3s;
+      &:focus {
+         color: #ca067f;
+      }
+      &:hover {
+         color: #c75a9d;
+      }
+      &:active {
+         color: #6d6767;
+      }
+   }
+}
