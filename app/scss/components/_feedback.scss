@@ -43,4 +43,16 @@
          color: #6d6767;
       }
    }
+   &-mobile {
+      display: none;
+   }
+}
+
+@media (max-width: 1115px) {
+   .feedback {
+      display: none;
+      &-mobile {
+         display: block;
+      }
+   }
 }
