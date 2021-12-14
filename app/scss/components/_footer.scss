@@ -1,14 +1,14 @@
 .footer {
+   background-color: #f9f9f9;
    &__top {
-      padding: 30px 0 35px;
-   }
-   &__wrapper {
+      padding: 60px 0 35px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       column-gap: 35px;
    }
-   &__box-info {
+   &__address {
+      font-style: normal;
       color: #000;
    }
    &__text {
@@ -25,6 +25,7 @@
       padding-left: 25px;
       position: relative;
       margin-bottom: 20px;
+      transition: color 0.3s ease 0s;
       &:last-child {
          margin-bottom: 0;
       }
@@ -47,7 +48,7 @@
          top: 0;
          left: 0;
       }
-      &--mailto {
+      &_mailto {
          &::before {
             content: "";
             background-image: url("../images/close.svg");
@@ -55,9 +56,17 @@
             height: 17px;
          }
       }
+      &_tel {
+         &::before {
+            content: "";
+            background-image: url("../images/phone.svg");
+            width: 23px;
+            height: 17px;
+         }
+      }
    }
    &__bottom {
-      padding: 25px 0;
+      padding: 35px 0 50px;
       text-align: center;
       border-top: 1px solid rgba(#000, 0.07);
    }
@@ -67,175 +76,17 @@
       line-height: 17px;
       color: #000;
    }
-   .feedback__tel {
-      margin-bottom: 0;
-   }
-}
-
-.footer-pop {
-   display: none;
-   position: fixed;
-   width: 760px;
-   min-height: 407px;
-   background-color: #130f2c;
-   left: 30%;
-   top: 20%;
-   z-index: 20;
-   &__inner {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 60px 0;
-   }
-   &__close {
-      position: absolute;
-      top: -20px;
-      right: -38px;
-      z-index: 10;
-   }
-   &__close-svg {
-      width: 23px;
-      height: 23px;
-      fill: #0095febf;
-      transition: fill 0.4s;
-      &:focus {
-         fill: #ca067f;
-      }
-      &:hover {
-         fill: #c75a9d;
-      }
-      &:active {
-         fill: #6d6767;
-      }
-   }
-   &__title {
-      @extend%roboto-700;
-      max-width: 235px;
-      font-size: 25px;
-      line-height: 32px;
-      color: #fff;
-      margin-bottom: 25px;
-   }
-   &__img {
-      position: absolute;
-   }
-   &__img--1 {
-      top: -55px;
-      left: -13px;
-   }
-   &__img--2 {
-      top: -56px;
-      right: 0;
-   }
-   &__img--3 {
-      bottom: -63px;
-      left: -18px;
-   }
-   &__img--4 {
-      bottom: -63px;
-      right: -14px;
-   }
-   &__text {
-      max-width: 165px;
-      font-size: 13px;
-      line-height: 17px;
-      color: #fff;
-      position: absolute;
-      span {
-         display: inline-block;
-         @extend%roboto-900;
-      }
-   }
-   &__text--1 {
-      top: 75px;
-      left: 25px;
-   }
-   &__text--2 {
-      top: 75px;
-      right: 5px;
-   }
-   &__text--3 {
-      max-width: 85px;
-      bottom: 70px;
-      left: 25px;
-   }
-   &__text--4 {
-      max-width: 97px;
-      bottom: 85px;
-      right: 62px;
-   }
 }
 
 @media (max-width: 1200px) {
    .footer {
-      &__wrapper {
+      &__top {
          flex-wrap: wrap;
          justify-content: space-around;
-      }
-      &__box-info {
-         border-right: none;
-      }
-      &__text {
-         margin-bottom: 10px;
-      }
-      &__link {
-         margin-bottom: 12px;
+         @include adaptiv-value("gap", 45, 30, 1);
       }
       .logo {
          display: none;
-      }
-      .footer-popup {
-         margin-left: 35px;
-      }
-   }
-}
-
-@media (max-width: 1125px) {
-   .footer-popup {
-      margin-left: 0;
-   }
-   .footer-pop {
-      left: 5%;
-      top: 28%;
-      &__close {
-         top: 18px;
-         right: 14px;
-      }
-   }
-}
-
-@media (max-width: 885px) {
-   .footer-pop {
-      left: 4px;
-      top: 28%;
-   }
-}
-
-@media (max-width: 793px) {
-   .footer-popup {
-      display: none;
-   }
-   .footer-pop {
-      display: none;
-   }
-}
-
-@media (max-width: 576px) {
-   .footer {
-      &__box-info {
-         margin-bottom: 45px;
-      }
-   }
-}
-
-@media (max-width: 360px) {
-   .footer {
-      &__top {
-         padding: 25px 0 20px;
-      }
-      &__box-info {
-         margin-bottom: 25px;
       }
    }
 }

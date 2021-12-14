@@ -1,43 +1,68 @@
 @function max($numbers...) {
-  @return m#{a}x(#{$numbers});
+   @return m#{a}x(#{$numbers});
 }
 @function min($numbers...) {
-  @return m#{i}n(#{$numbers});
+   @return m#{i}n(#{$numbers});
 }
+
+%roboto-300 {
+   font-family: "Roboto-Light", sans-serif;
+   font-weight: 300;
+}
+
+%roboto-400 {
+   font-family: "Roboto-Regular", sans-serif;
+   font-weight: 400;
+}
+
+%roboto-500 {
+   font-family: "Roboto-Medium", sans-serif;
+   font-weight: 500;
+}
+
+%roboto-700 {
+   font-family: "Roboto-Bold", sans-serif;
+   font-weight: 700;
+}
+
+%roboto-900 {
+   font-family: "Roboto-Black", sans-serif;
+   font-weight: 900;
+}
+
+%radio-hidden {
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   position: absolute;
+}
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+   $addSize: $startSize - $minSize;
+   @if $type==1 {
+      #{$property}: $startSize + px;
+      @media (max-width: #{$maxWidthContainer + px}) {
+         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+      }
+   } @else if $type==2 {
+      #{$property}: $startSize + px;
+      @media (min-width: #{$maxWidthContainer + px}) {
+         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+      }
+   } @else {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+   }
+}
+
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1270;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
 
 $default: #3c3c3c;
 $title: #000;
 $accent: #c75a9d;
-
-%roboto-300 {
-  font-family: "Roboto-Light", sans-serif;
-  font-weight: 300;
-}
-
-%roboto-400 {
-  font-family: "Roboto-Regular", sans-serif;
-  font-weight: 400;
-}
-
-%roboto-500 {
-  font-family: "Roboto-Medium", sans-serif;
-  font-weight: 500;
-}
-
-%roboto-700 {
-  font-family: "Roboto-Bold", sans-serif;
-  font-weight: 700;
-}
-
-%roboto-900 {
-  font-family: "Roboto-Black", sans-serif;
-  font-weight: 900;
-}
-
-%radio-hidden {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  position: absolute;
-}

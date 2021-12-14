@@ -1,19 +1,20 @@
 .about {
-   padding-top: 160px;
+   @include adaptiv-value("padding-top", 160, 75, 1);
    &__title {
       text-align: center;
-      margin-bottom: 60px;
+      @include adaptiv-value("margin-bottom", 60, 35, 1);
    }
    &__specification {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 70px;
+      @include adaptiv-value("margin-bottom", 70, 48, 1);
    }
    &__item {
-      flex: 110;
-      padding: 45px 25px;
-      max-width: 274px;
-      min-height: 179px;
+      flex: 0 1 274px;
+      @include adaptiv-value("padding-top", 45, 18, 1);
+      @include adaptiv-value("padding-bottom", 45, 18, 1);
+      @include adaptiv-value("padding-right", 25, 10, 1);
+      @include adaptiv-value("padding-left", 25, 10, 1);
       border: 2px dashed #c75a9d;
       border-radius: 15px;
       text-align: center;
@@ -21,16 +22,16 @@
    &__number {
       display: block;
       @extend%roboto-700;
-      font-size: 35px;
-      line-height: 40px;
+      @include adaptiv-value("font-size", 35, 22, 1);
+      line-height: 40/35 * 100%;
       color: $accent;
-      margin-bottom: 15px;
+      @include adaptiv-value("margin-bottom", 15, 5, 1);
    }
    &__text {
       display: inline-block;
       @extend%roboto-700;
-      font-size: 20px;
-      line-height: 26px;
+      @include adaptiv-value("font-size", 20, 18, 1);
+      line-height: 26/20 * 100%;
       color: #000;
    }
    &__content {
@@ -42,7 +43,7 @@
       align-items: center;
       max-width: 595px;
       width: 100%;
-      height: 396px;
+      @include adaptiv-value("height", 396, 220, 1);
       border-radius: 10px;
       background-position: center center;
       background-repeat: no-repeat;
@@ -62,12 +63,15 @@
    }
    &__price {
       align-self: center;
-      padding: 20px;
+      @include adaptiv-value("padding", 20, 10, 1);
       background-color: #130f2c;
       border-radius: 10px;
    }
    &__price-inner {
-      padding: 27px 45px 37px;
+      @include adaptiv-value("padding-top", 27, 25, 1);
+      @include adaptiv-value("padding-bottom", 37, 30, 1);
+      @include adaptiv-value("padding-right", 45, 20, 1);
+      @include adaptiv-value("padding-left", 45, 20, 1);
       border: 2px dashed #0095fe;
       text-align: center;
       position: relative;
@@ -84,10 +88,10 @@
    }
    &__desc {
       @extend%roboto-700;
-      font-size: 25px;
-      line-height: 32px;
+      @include adaptiv-value("font-size", 25, 18, 1);
+      line-height: 32/25 * 100%;
       color: #fff;
-      margin-bottom: 25px;
+      @include adaptiv-value("margin-bottom", 25, 20, 1);
    }
    &__form {
       max-width: 285px;
@@ -97,30 +101,22 @@
 
 @media (max-width: 1200px) {
    .about {
-      padding-top: 120px;
-      &__title {
-         margin-bottom: 30px;
-      }
       &__specification {
          flex-direction: column;
          justify-content: start;
+         @include adaptiv-value("gap", 30, 20, 1);
       }
       &__item {
-         max-width: 100%;
-         min-height: auto;
-         padding: 25px 25px;
-         & + & {
-            margin-top: 25px;
-         }
+         flex: 0 1 100%;
       }
       &__content {
          flex-direction: column;
          justify-content: center;
          align-items: center;
+         @include adaptiv-value("gap", 32, 25, 1);
       }
       &__video {
          margin-right: 0;
-         margin-bottom: 50px;
       }
    }
 }
@@ -129,55 +125,6 @@
    .about {
       &__price-inner::after {
          display: none;
-      }
-   }
-}
-
-@media (max-width: 576px) {
-   .about {
-      padding-top: 50px;
-      &__number {
-         margin-bottom: 5px;
-      }
-      &__item {
-         padding: 10px 25px;
-      }
-      &__number {
-         font-size: 25px;
-         line-height: 30px;
-      }
-      &__video {
-         height: 300px;
-      }
-      &__desc {
-         font-size: 21px;
-         line-height: 27px;
-      }
-   }
-}
-
-@media (max-width: 360px) {
-   .about {
-      &__title {
-         margin-bottom: 17px;
-      }
-      &__video {
-         height: 215px;
-      }
-      &__price {
-         padding: 8px;
-      }
-      &__price-inner {
-         padding: 15px 15px 23px;
-      }
-   }
-}
-
-@media (max-width: 320px) {
-   .about {
-      &__desc {
-         font-size: 19px;
-         line-height: 25px;
       }
    }
 }

@@ -3,20 +3,17 @@
 @import "reset";
 @import "libs";
 @import "global";
+@import "_ui";
 
 @import "components/header";
-@import "components/logo";
 @import "components/menu";
 @import "components/feedback";
-@import "components/button";
-@import "components/btn";
-@import "components/pop-up";
+@import "components/popup";
 @import "components/form";
 @import "components/social";
-@import "components/title";
-@import "components/scroller";
 @import "components/footer";
 
+@import "index/blog";
 @import "index/about";
 @import "index/services";
 @import "index/slogan";
@@ -26,4 +23,3 @@
 @import "index/consultation";
 @import "index/process";
 @import "index/question";
-@import "index/review";

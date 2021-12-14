@@ -9,8 +9,8 @@
       }
    }
    &__img {
-      width: 42px;
-      height: 42px;
+      @include adaptiv-value("width", 42, 27, 1);
+      @include adaptiv-value("height", 42, 27, 1);
       transition: transform 0.5s;
       &--whatsapp,
       &--instagram,
@@ -23,15 +23,21 @@
          }
       }
       &--vk {
-         width: 43px;
-         height: 43px;
+         @include adaptiv-value("width", 43, 27, 1);
+         @include adaptiv-value("height", 43, 27, 1);
          &:hover {
             transform: scale(1.09);
          }
       }
       &--facebook {
-         width: 40px;
-         height: 40px;
+         @include adaptiv-value("width", 43, 27, 1);
+         @include adaptiv-value("height", 43, 27, 1);
       }
+   }
+}
+
+@media (max-width: 767.98px) {
+   .social {
+      display: none;
    }
 }

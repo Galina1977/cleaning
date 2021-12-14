@@ -1,14 +1,15 @@
 .slogan {
-   padding: 185px 0 50px;
+   @include adaptiv-value("padding-top", 185, 60, 1);
+   @include adaptiv-value("padding-bottom", 50, 40, 1);
    background-color: #f9f9f9;
    &__title {
-      @extend%roboto-700;
-      font-size: 30px;
-      line-height: 35px;
-      color: #000;
-      margin-bottom: 35px;
+      @include adaptiv-value("margin-bottom", 35, 15, 1);
       &::selection {
          background-color: $accent;
+      }
+      &::after {
+         content: "";
+         display: none;
       }
    }
    &__row {
@@ -16,14 +17,14 @@
       justify-content: space-between;
    }
    &__box-text {
-      max-width: 594px;
+      margin-right: 150px;
    }
    &__text {
       @extend%roboto-400;
       min-height: auto;
       line-height: 22px;
       & + & {
-         margin-top: 20px;
+         @include adaptiv-value("margin-top", 20, 15, 1);
       }
       &::selection {
          color: #000;
@@ -33,13 +34,16 @@
    &__box-item {
       display: flex;
       flex-wrap: wrap;
-      grid-gap: 15px;
-      max-width: 420px;
+      max-width: 505px;
+      grid-gap: 12px;
    }
    &__item {
-      flex: 0 0 200px;
+      flex: 0 1 200px;
       min-height: auto;
-      padding: 105px 15px 20px;
+      @include adaptiv-value("padding-top", 105, 75, 1);
+      @include adaptiv-value("padding-bottom", 20, 10, 1);
+      @include adaptiv-value("padding-right", 15, 25, 1);
+      @include adaptiv-value("padding-left", 15, 25, 1);
       background-color: #fff;
       box-shadow: 0 10px 10px 0 rgba(#000, 0.15);
       text-align: center;
@@ -48,32 +52,32 @@
          content: "";
          background-image: url("../images/slogan/cleaning_1.svg");
          background-repeat: no-repeat;
-         width: 51px;
-         height: 55px;
+         @include adaptiv-value("width", 55, 40, 1);
+         @include adaptiv-value("height", 55, 40, 1);
          position: absolute;
-         top: 15%;
+         top: 30px;
          left: 50%;
          transform: translateX(-50%);
       }
-      &--2 {
+      &_2 {
          &::before {
             background-image: url("../images/slogan/cleaning_2.svg");
-            width: 56px;
-            height: 56px;
+            @include adaptiv-value("width", 56, 41, 1);
+            @include adaptiv-value("height", 56, 41, 1);
          }
       }
-      &--3 {
+      &_3 {
          &::before {
             background-image: url("../images/slogan/cleaning_3.svg");
-            width: 54px;
-            height: 54px;
+            @include adaptiv-value("width", 54, 39, 1);
+            @include adaptiv-value("height", 54, 39, 1);
          }
       }
-      &--4 {
+      &_4 {
          &::before {
             background-image: url("../images/slogan/cleaning_4.svg");
-            width: 57px;
-            height: 54px;
+            @include adaptiv-value("width", 57, 42, 1);
+            @include adaptiv-value("height", 54, 39, 1);
          }
       }
    }
@@ -87,48 +91,25 @@
 
 @media (max-width: 1200px) {
    .slogan {
-      &__row {
-         flex-direction: column;
-         align-items: center;
-      }
       &__box-text {
-         margin-bottom: 50px;
+         margin-right: 0;
+         @include adaptiv-value("margin-bottom", 50, 30, 1);
       }
       &__title {
          text-align: center;
       }
-   }
-}
-
-@media (max-width: 992px) {
-   .slogan {
-      padding: 150px 0 50px;
-   }
-}
-
-@media (max-width: 599px) {
-   .slogan {
-      padding: 120px 0 50px;
       &__row {
          display: block;
       }
       &__box-item {
          display: block;
          max-width: 100%;
+         margin: 0 auto;
       }
       &__item {
-         margin-bottom: 10px;
-      }
-   }
-}
-
-@media (max-width: 360px) {
-   .slogan {
-      padding: 55px 0 50px;
-      &__title {
-         font-size: 28px;
-         line-height: 35px;
-         margin-bottom: 20px;
+         &:not(:last-child) {
+            margin: 0 0 10px 0;
+         }
       }
    }
 }

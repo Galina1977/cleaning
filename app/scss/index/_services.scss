@@ -1,8 +1,8 @@
 .services {
-   padding-top: 185px;
+   @include adaptiv-value("padding-top", 185, 75, 1);
    &__title {
       text-align: center;
-      margin-bottom: 60px;
+      @include adaptiv-value("margin-bottom", 60, 40, 1);
    }
    &__wrapper {
       display: flex;
@@ -14,7 +14,10 @@
       flex: 0 0 275px;
       position: relative;
       min-height: auto;
-      padding: 105px 25px 68px 25px;
+      @include adaptiv-value("padding-top", 105, 90, 1);
+      @include adaptiv-value("padding-bottom", 68, 40, 1);
+      @include adaptiv-value("padding-right", 25, 10, 1);
+      @include adaptiv-value("padding-left", 25, 10, 1);
       text-align: center;
       color: #000;
       border: 2px solid #d9d8d8;
@@ -32,41 +35,41 @@
          width: 55px;
          height: 55px;
          position: absolute;
-         top: 15%;
+         top: 35px;
          left: 50%;
          transform: translateX(-50%);
       }
-      &--2 {
+      &_2 {
          &::before {
             background-image: url("../images/services/icon_2.svg");
          }
       }
-      &--3 {
+      &_3 {
          &::before {
             background-image: url("../images/services/icon_3.svg");
          }
       }
-      &--4 {
+      &_4 {
          &::before {
             background-image: url("../images/services/icon_4.svg");
          }
       }
-      &--5 {
+      &_5 {
          &::before {
             background-image: url("../images/services/icon_5.svg");
          }
       }
-      &--6 {
+      &_6 {
          &::before {
             background-image: url("../images/services/icon_6.svg");
          }
       }
-      &--7 {
+      &_7 {
          &::before {
             background-image: url("../images/services/icon_7.svg");
          }
       }
-      &--8 {
+      &_8 {
          &::before {
             background-image: url("../images/services/icon_8.svg");
          }
@@ -96,43 +99,22 @@
 
 @media (max-width: 1200px) {
    .services {
-      padding-top: 140px;
       &__wrapper {
          justify-content: center;
       }
    }
 }
 
-@media (max-width: 768px) {
-   .services {
-      padding-top: 90px;
-      &__title {
-         margin-bottom: 35px;
-      }
-   }
-}
-
 @media (max-width: 599px) {
    .services {
-      padding-top: 70px;
       &__wrapper {
          display: block;
-      }
-      &__item {
-         padding: 105px 25px 55px 25px;
-      }
-      &__subject {
-         font-size: 21px;
-         margin-bottom: 5px;
       }
    }
 }
 
 @media (max-width: 360px) {
    .services {
-      &__item {
-         padding: 90px 15px 55px 15px;
-      }
       .btn--transparent {
          &:last-child {
             margin-bottom: 0;

@@ -13,56 +13,49 @@
 
 <body>
    <header class="header">
-      <a class="scroller" id="scroller" href="#">
-         <svg class="scroller__arrow-circle">
-            <use xlink:href="images/icons/arrow-circle.svg#arrow-circle"></use>
-         </svg>
-      </a>
       <div class="container">
-         <div class="header-top">
-            <a class="logo">
+         <div class="header__wrapper">
+            <a class="header__logo logo">
                <img class="logo__img" src="images/header/logo.png" alt="Чистая фея">
             </a>
-            <div class="header-top__wrapper">
-               <div class="header-top__inner">
-                  <p class="header-top__text">
+            <div class="header__inner">
+               <div class="header__contact">
+                  <p class="header__text">
                      Сеть клининговых центров <span> по Москве и МО </span>
                   </p>
-                  <div class="header-top__info">
-                     <div class="feedback">
+                  <div class="header__info">
+                     <div class="header__feedback feedback">
                         <a class="feedback__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
                         <a class="feedback__mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
                      </div>
                   </div>
-                  <div class="header-top__popup">
-                     <div class="popup">
-                        <button class="button" type="button" title="Всплывающее окно popup">Заказать звонок </button>
-                     </div>
-                     <div class="pop">
-                        <a class="pop__close" href="#">
-                           <svg class="pop__close-svg">
+                  <div class="header__popup">
+                     <a class="button js-popup__link" type="button" href="#popup-header">Заказать звонок</a>
+                     <div id="popup-header" class="popup mfp-hide">
+                        <div class="popup__close">
+                           <svg class="popup__close-icon close">
                               <use xlink:href="images/icons/close.svg#close"></use>
                            </svg>
-                        </a>
-                        <div class="pop__inner">
-                           <div class="pop__title">Заказать звонок</div>
-                           <div class="pop__item">
-                              <img class="pop__img pop__img--1" src="images/popup/1.png" alt="Дом">
-                              <p class="pop__text pop__text--1"><span>Скидка</span> на мойку окон <span>50 % </span> при заказе уборки коттеджа </p>
+                        </div>
+                        <div class="popup__inner">
+                           <div class="popup__title">Заказать звонок</div>
+                           <div class="popup__item">
+                              <img class="popup__img popup__img_1" src="images/popup/1.png" alt="Дом">
+                              <p class="popup__text popup__text_1"><span>Скидка</span> на мойку окон <span>50 % </span> при заказе уборки коттеджа </p>
                            </div>
-                           <div class="pop__item">
-                              <img class="pop__img pop__img--2" src="images/popup/2.png" alt="Уборщица">
-                              <p class="pop__text pop__text--2"><span>Скидка</span> на мойку окон <span>20 % </span> при заказе
+                           <div class="popup__item">
+                              <img class="popup__img popup__img_2" src="images/popup/2.png" alt="Уборщица">
+                              <p class="popup__text popup__text_2"><span>Скидка</span> на мойку окон <span>20 % </span> при заказе
                                  любого вида уборки </p>
                            </div>
-                           <div class="pop__item">
-                              <img class="pop__img pop__img--3" src="images/popup/3.png" alt="Инвентарь для уборки">
-                              <p class="pop__text pop__text--3"><span>Скидка </span> на
+                           <div class="popup__item">
+                              <img class="popup__img popup__img_3" src="images/popup/3.png" alt="Инвентарь для уборки">
+                              <p class="popup__text popup__text_3"><span>Скидка </span> на
                                  первый заказ <span>15 % </span></p>
                            </div>
-                           <div class="pop__item">
-                              <img class="pop__img pop__img--4" src="images/popup/4.png" alt="Подарок">
-                              <p class="pop__text pop__text--4"><span>Скидка </span> на
+                           <div class="popup__item">
+                              <img class="popup__img popup__img_4" src="images/popup/4.png" alt="Подарок">
+                              <p class="popup__text popup__text_4"><span>Скидка </span> на
                                  День Рождения <span>20 % </span></p>
                            </div>
                            <form class="form" action="#" autocomplete="on">
@@ -81,12 +74,11 @@
                               </label>
                            </form>
                         </div>
-                        <div class="bg-overlay"></div>
                      </div>
                   </div>
                </div>
-               <div class="header-top__menu">
-                  <button class="header-top__burger" type="button">
+               <div class="header__menu">
+                  <button class="header__burger" type="button">
                      <span></span>
                   </button>
                   <nav class="menu">
@@ -104,15 +96,10 @@
                            <a class="menu__link" href="#specialist">Специалисты</a>
                         </li>
                         <li class="menu__item">
-                           <a class="menu__link" href="#review">Отзывы</a>
+                           <a class="menu__link" href="#question">Вопросы</a>
                         </li>
                         <li class="menu__item">
                            <a class="menu__link" href="#footer">Контакты</a>
-                        </li>
-                        <li class="menu__item">
-                           <p class="header-top__text header-top__text-mobile">
-                              Сеть клининговых центров <span> по Москве и МО </span>
-                           </p>
                         </li>
                         <li class="menu__item">
                            <div class="feedback feedback-mobile">
@@ -131,12 +118,16 @@
             </div>
          </div>
       </div>
-      <div class="header-bottom" style="background-image: url(/images/header/fon_bg.webp);">
-         <div class="header-bottom__box-link">
-            <a class="header-bottom__link" href="#">Хотите помыть окна?</a>
+
+   </header>
+
+   <main class="main">
+      <div class="blog" style="background-image: url(images/header/fon_bg.webp);">
+         <div class="blog__box-link">
+            <a class="blog__link" href="#!">Хотите помыть окна?</a>
          </div>
-         <div class="header-bottom__box-social">
-            <div class="social">
+         <div class="blog__box-social">
+            <div class="blog__social social">
                <ul class="social__list">
                   <li class="social__item">
                      <a class="social__link" href="#">
@@ -170,12 +161,9 @@
                   </li>
                </ul>
             </div>
-            <!-- </div> -->
          </div>
       </div>
-   </header>
 
-   <main class="main">
       <div id="about" class="about">
          <div class="container">
             <div class="about__inner">
@@ -232,7 +220,7 @@
                      <button class="btn btn--transparent" type="button">Подробнее</button>
                   </div>
                </div>
-               <div class="services__item services__item--2">
+               <div class="services__item services__item_2">
                   <span class="services__subject">Уборка после ремонта</span>
                   <span class="services__price">от 100 руб./м2 </span>
                   <div class="services__box-btn">
@@ -240,7 +228,7 @@
                      <button class="btn btn--transparent" type="button">Подробнее</button>
                   </div>
                </div>
-               <div class="services__item services__item--3">
+               <div class="services__item services__item_3">
                   <span class="services__subject">Поддерживающая уборка</span>
                   <span class="services__price">от 2000 руб.</span>
                   <div class="services__box-btn">
@@ -248,7 +236,7 @@
                      <button class="btn btn--transparent" type="button">Подробнее</button>
                   </div>
                </div>
-               <div class="services__item services__item--4">
+               <div class="services__item services__item_4">
                   <span class="services__subject">Мойка окон</span>
                   <span class="services__price">от 550 руб.</span>
                   <div class="services__box-btn">
@@ -256,7 +244,7 @@
                      <button class="btn btn--transparent" type="button">Подробнее</button>
                   </div>
                </div>
-               <div class="services__item services__item--5">
+               <div class="services__item services__item_5">
                   <span class="services__subject">VIP уборка</span>
                   <span class="services__price">от 150 руб./ м2.</span>
                   <div class="services__box-btn">
@@ -264,7 +252,7 @@
                      <button class="btn btn--transparent" type="button">Подробнее</button>
                   </div>
                </div>
-               <div class="services__item services__item--6">
+               <div class="services__item services__item_6">
                   <span class="services__subject">Химчистка</span>
                   <span class="services__price">от 100 руб./ м2</span>
                   <div class="services__box-btn">
@@ -272,7 +260,7 @@
                      <button class="btn btn--transparent" type="button">Подробнее</button>
                   </div>
                </div>
-               <div class="services__item services__item--7">
+               <div class="services__item services__item_7">
                   <span class="services__subject">Уборка домов / коттеджей</span>
                   <span class="services__price">от 100 руб./ м2</span>
                   <div class="services__box-btn">
@@ -280,7 +268,7 @@
                      <button class="btn btn--transparent" type="button">Подробнее</button>
                   </div>
                </div>
-               <div class="services__item services__item--8">
+               <div class="services__item services__item_8">
                   <span class="services__subject">Домашний персонал</span>
                   <span class="services__price">от 500 руб./ час</span>
                   <div class="services__box-btn">
@@ -294,7 +282,7 @@
 
       <div class="slogan">
          <div class="container">
-            <div class="slogan__title">
+            <div class="slogan__title title">
                Клининг - искусство чистоты
             </div>
             <div class="slogan__row">
@@ -324,15 +312,15 @@
                </div>
                <div class="slogan__box-item">
                   <div class="slogan__item">
-                     <p class="slogan__desc">Наши средства и инвентарь</p>
+                     <p class="slogan__desc">Наши средства инвентарь</p>
                   </div>
-                  <div class="slogan__item slogan__item--2">
+                  <div class="slogan__item slogan__item_2">
                      <p class="slogan__desc">Гарантия качества</p>
                   </div>
-                  <div class="slogan__item slogan__item--3">
+                  <div class="slogan__item slogan__item_3">
                      <p class="slogan__desc">Без предоплаты</p>
                   </div>
-                  <div class="slogan__item slogan__item--4">
+                  <div class="slogan__item slogan__item_4">
                      <p class="slogan__desc">Уборка без вашего присутствия</p>
                   </div>
                </div>
@@ -343,20 +331,20 @@
       <div class="discount">
          <div class="container">
             <div class="discount__inner">
-               <div class="discount__item">
+               <a class="discount__item" href="#!">
                   <p class="discount__text">Скидка <span>на День Рождения</span> 20 %</p>
-               </div>
-               <div class="discount__item discount__item--2">
+               </a>
+               <a class="discount__item discount__item_2" href="#!">
                   <p class="discount__text">Скидка <span>на первый заказ</span> 15 %</p>
-               </div>
-               <div class="discount__item discount__item--3">
+               </a>
+               <a class="discount__item discount__item_3" href="#!">
                   <p class="discount__text">Скидка <span>на мойку окон</span> 50 % <span>при заказе
                         уборки коттеджа</span></p>
-               </div>
-               <div class="discount__item discount__item--4">
+               </a>
+               <a class="discount__item discount__item_4" href="#!">
                   <p class="discount__text">Скидка <span>на мойку окон</span> 15 % <span>при заказе
                         любого вида уборки</span></p>
-               </div>
+               </a>
             </div>
          </div>
       </div>
@@ -366,51 +354,71 @@
             <div class="additional-services__wrapper">
                <div class="additional-services__title title">Дополнительные услуги</div>
                <div class="additional-services__inner">
-                  <a class="additional-services__item" href="#!">
-                     <span class="additional-services__subject">Мойка бытовой техники внутри</span>
-                     <span class="additional-services__price">300 р./ ед.</span>
-                  </a>
-                  <a class="additional-services__item additional-services__item--2" href="#!">
-                     <span class="additional-services__subject">Мойка кухонного
-                        гарнитура внутри</span>
-                     <span class="additional-services__price">500 р.</span>
-                  </a>
-                  <a class="additional-services__item additional-services__item--3" href="#!">
-                     <span class="additional-services__subject">Чистка люстр</span>
-                     <span class="additional-services__price">от 500р за шт\
-                        хрустальные от 1000р</span>
-                  </a>
-                  <a class="additional-services__item additional-services__item--4" href="#!">
-                     <span class="additional-services__subject">Глажка белья</span>
-                     <span class="additional-services__price">(полотенца
-                        и постельное белье)- 500р час</span>
-                  </a>
-                  <a class="additional-services__item additional-services__item--5" href="#!">
-                     <span class="additional-services__subject">Выезд доп. специалиста</span>
-                     <span class="additional-services__price">1000 р. на всю уборку</span>
-                  </a>
-                  <a class="additional-services__item additional-services__item--6" href="#!">
-                     <span class="additional-services__subject">Стирка и навеска штор
-                        и гардин</span>
-                     <span class="additional-services__price">от 500 р./ окно</span>
-                  </a>
-                  <a class="additional-services__item additional-services__item--7" href="#!">
-                     <span class="additional-services__subject">Эко уборка</span>
-                     <span class="additional-services__price">+40% к стоимости</span>
-                  </a>
-                  <a class="additional-services__item additional-services__item--8" href="#!">
-                     <span class="additional-services__subject">Выезд с
-                        оборудованием</span>
-                     <span class="additional-services__price">500 р. Москва 1000 р. МО</span>
-                  </a>
-                  <a class="additional-services__item additional-services__item--9" href="#!">
-                     <span class="additional-services__subject">Мойка окон</span>
-                     <span class="additional-services__price">от 500 р.</span>
-                  </a>
-                  <a class="additional-services__item additional-services__item--10" href="#!">
-                     <span class="additional-services__subject">Доставка ключенй</span>
-                     <span class="additional-services__price">от 500 р.</span>
-                  </a>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item" href="#!">
+                        <span class="additional-services__subject">Мойка бытовой техники внутри</span>
+                        <span class="additional-services__price">300 р./ ед.</span>
+                     </a>
+                  </div>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item additional-services__item_2" href="#!">
+                        <span class="additional-services__subject">Мойка кухонного
+                           гарнитура внутри</span>
+                        <span class="additional-services__price">500 р.</span>
+                     </a>
+                  </div>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item additional-services__item_3" href="#!">
+                        <span class="additional-services__subject">Чистка люстр</span>
+                        <span class="additional-services__price">от 500р за шт\
+                           хрустальные от 1000р</span>
+                     </a>
+                  </div>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item additional-services__item_4" href="#!">
+                        <span class="additional-services__subject">Глажка белья</span>
+                        <span class="additional-services__price">(полотенца
+                           и постельное белье)- 500р час</span>
+                     </a>
+                  </div>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item additional-services__item_5" href="#!">
+                        <span class="additional-services__subject">Выезд доп. специалиста</span>
+                        <span class="additional-services__price">1000 р. на всю уборку</span>
+                     </a>
+                  </div>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item additional-services__item_6" href="#!">
+                        <span class="additional-services__subject">Стирка и навеска штор
+                           и гардин</span>
+                        <span class="additional-services__price">от 500 р./ окно</span>
+                     </a>
+                  </div>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item additional-services__item_7" href="#!">
+                        <span class="additional-services__subject">Эко уборка</span>
+                        <span class="additional-services__price">+40% к стоимости</span>
+                     </a>
+                  </div>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item additional-services__item_8" href="#!">
+                        <span class="additional-services__subject">Выезд с
+                           оборудованием</span>
+                        <span class="additional-services__price">500 р. Москва 1000 р. МО</span>
+                     </a>
+                  </div>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item additional-services__item_9" href="#!">
+                        <span class="additional-services__subject">Мойка окон</span>
+                        <span class="additional-services__price">от 500 р.</span>
+                     </a>
+                  </div>
+                  <div class="additional-services__column">
+                     <a class="additional-services__item additional-services__item_10" href="#!">
+                        <span class="additional-services__subject">Доставка ключенй</span>
+                        <span class="additional-services__price">от 500 р.</span>
+                     </a>
+                  </div>
                </div>
                <div class="additional-services__btn">
                   <a class="btn" href="#!">Посмотреть ещё услуги</a>
@@ -575,41 +583,7 @@
          </div>
       </div>
 
-      <div class="process">
-         <div class="container">
-            <div class="process__title title">
-               Процесс наших работ
-            </div>
-            <div class="process__slider">
-               <div class="process__item">
-                  <img class="process__img" src="images/process/1.jpg" alt="Процесс наших работ">
-               </div>
-               <div class="process__item">
-                  <img class="process__img" src="images/process/2.jpg" alt="Процесс наших работ">
-               </div>
-               <div class="process__item">
-                  <img class="process__img" src="images/process/3.jpg" alt="Процесс наших работ">
-               </div>
-               <div class="process__item">
-                  <img class="process__img" src="images/process/4.jpg" alt="Процесс наших работ">
-               </div>
-               <div class="process__item">
-                  <img class="process__img" src="images/process/1.jpg" alt="Процесс наших работ">
-               </div>
-               <div class="process__item">
-                  <img class="process__img" src="images/process/2.jpg" alt="Процесс наших работ">
-               </div>
-               <div class="process__item">
-                  <img class="process__img" src="images/process/3.jpg" alt="Процесс наших работ">
-               </div>
-               <div class="process__item">
-                  <img class="process__img" src="images/process/4.jpg" alt="Процесс наших работ">
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="question">
+      <div id="question" class="question">
          <div class="container">
             <div class="question__title title">Часто задаваемые вопросы</div>
             <div class="question__inner">
@@ -662,108 +636,100 @@
          </div>
       </div>
 
-      <div id="review" class="review">
+      <div class="process">
          <div class="container">
-            <div class="review__title title">
-               Что блоггеры и звезды говорят о нас?
+            <div class="process__title title">
+               Процесс наших работ
             </div>
             <div class="process__slider">
                <div class="process__item">
-                  <img class="process__img" src="images/process/5.jpg" alt="Процесс наших работ">
+                  <img class="process__img" src="images/process/1.jpg" alt="Процесс наших работ">
                </div>
                <div class="process__item">
-                  <img class="process__img" src="images/process/6.jpg" alt="Процесс наших работ">
+                  <img class="process__img" src="images/process/2.jpg" alt="Процесс наших работ">
                </div>
                <div class="process__item">
-                  <img class="process__img" src="images/process/7.jpg" alt="Процесс наших работ">
+                  <img class="process__img" src="images/process/3.jpg" alt="Процесс наших работ">
                </div>
                <div class="process__item">
-                  <img class="process__img" src="images/process/8.jpg" alt="Процесс наших работ">
+                  <img class="process__img" src="images/process/4.jpg" alt="Процесс наших работ">
                </div>
                <div class="process__item">
-                  <img class="process__img" src="images/process/5.jpg" alt="Процесс наших работ">
+                  <img class="process__img" src="images/process/1.jpg" alt="Процесс наших работ">
                </div>
                <div class="process__item">
-                  <img class="process__img" src="images/process/6.jpg" alt="Процесс наших работ">
+                  <img class="process__img" src="images/process/2.jpg" alt="Процесс наших работ">
                </div>
                <div class="process__item">
-                  <img class="process__img" src="images/process/7.jpg" alt="Процесс наших работ">
+                  <img class="process__img" src="images/process/3.jpg" alt="Процесс наших работ">
                </div>
                <div class="process__item">
-                  <img class="process__img" src="images/process/8.jpg" alt="Процесс наших работ">
+                  <img class="process__img" src="images/process/4.jpg" alt="Процесс наших работ">
                </div>
             </div>
          </div>
       </div>
+
    </main>
 
    <footer id="footer" class="footer">
       <div class="container">
          <div class="footer__top">
-            <div class="footer__wrapper">
-               <a class="logo">
-                  <img class="logo__img" src="images/header/logo.png" alt="Чистая фея">
-               </a>
-               <div class="footer__box-info">
-                  <p class="footer__text">
-                     Наш офис:
-                  </p>
-                  <a class="footer__link  footer__link--address" href="#!">г. Одесса, <br> Французский бульвар, д.22</a>
-                  <a class="footer__link footer__link--mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
-               </div>
-               <div class="feedback">
-                  <a class="feedback__tel" href="tel:+79686057777">7 (968) 605-77-77</a>
-               </div>
-               <div class="footer__box-popup">
-                  <div class="footer-popup">
-                     <button class="button" type="button" title="Всплывающее окно popup">Оформить заявку</button>
+            <a class="footer__logo logo">
+               <img class="logo__img" src="images/header/logo.png" alt="Чистая фея">
+            </a>
+            <address class="footer__address">
+               <p class="footer__text">Наш офис:</p>
+               <a class="footer__link" href="#!">г. Одесса <br> Французский бульвар дом 22</a>
+               <a class="footer__link footer__link_mailto" href="mailto:cleaning.feya@gmail.com">cleaning.feya@gmail.com</a>
+               <a class="footer__link footer__link_tel" href="tel:+79686057777">7 (968) 605-77-77</a>
+            </address>
+            <div class="footer__box-popup">
+               <a class="button js-popup__link" type="button" href="#popup-footer">Оформить заявку</a>
+               <div id="popup-footer" class="popup mfp-hide">
+                  <div class="popup__close">
+                     <svg class="popup__close-icon close">
+                        <use xlink:href="images/icons/close.svg#close"></use>
+                     </svg>
                   </div>
-                  <div class="footer-pop">
-                     <a class="footer-pop__close" href="#">
-                        <svg class="footer-pop__close-svg">
-                           <use xlink:href="images/icons/close.svg#close"></use>
-                        </svg>
-                     </a>
-                     <div class="footer-pop__inner">
-                        <div class="footer-pop__title">Оформить заявку</div>
-                        <div class="footer-pop__item">
-                           <img class="footer-pop__img footer-pop__img--1" src="images/popup/1.png" alt="Дом">
-                           <p class="footer-pop__text footer-pop__text--1"><span>Скидка</span> на мойку окон <span>50 % </span> при заказе уборки коттеджа </p>
-                        </div>
-                        <div class="footer-pop__item">
-                           <img class="footer-pop__img footer-pop__img--2" src="images/popup/2.png" alt="Уборщица">
-                           <p class="footer-pop__text footer-pop__text--2"><span>Скидка</span> на мойку окон <span>20 % </span> при заказе
-                              любого вида уборки </p>
-                        </div>
-                        <div class="footer-pop__item">
-                           <img class="footer-pop__img footer-pop__img--3" src="images/popup/3.png" alt="Инвентарь для уборки">
-                           <p class="footer-pop__text footer-pop__text--3"><span>Скидка </span> на
-                              первый заказ <span>15 % </span></p>
-                        </div>
-                        <div class="footer-pop__item">
-                           <img class="footer-pop__img footer-pop__img--4" src="images/popup/4.png" alt="Подарок">
-                           <p class="footer-pop__text footer-pop__text--4"><span>Скидка </span> на
-                              День Рождения <span>20 % </span></p>
-                        </div>
-                        <form class="form" action="#" autocomplete="on">
-                           <label>Ваш е-маил
-                              <input class="form__input" type="text" name="еmail" placeholder="Ваш е-маил *" required>
-                           </label>
-                           <label>Ваш имя
-                              <input class="form__input" type="text" name="name" placeholder="Ваш имя">
-                           </label>
-                           <label for="message">Ваше сообщение</label>
-                           <textarea id="message" class="form__textarea" name="message" placeholder="Ваше сообщение" spellcheck="true"></textarea>
-                           <div class="form__box-button">
-                              <button class="form__button" type="submit">Отправить</button>
-                           </div>
-                           <label class="form__label-checked">
-                              <input class="filter-style" type="checkbox" required>
-                              Даю своё согласие на обработку <span>персональных данных</span>
-                           </label>
-                        </form>
+                  <div class="popup__inner">
+                     <div class="popup__title">Оформить заявку</div>
+                     <div class="popup__item">
+                        <img class="popup__img popup__img_1" src="images/popup/1.png" alt="Дом">
+                        <p class="popup__text popup__text_1"><span>Скидка</span> на мойку окон <span>50 % </span> при заказе уборки коттеджа </p>
                      </div>
-                     <div class="bg-overlay"></div>
+                     <div class="popup__item">
+                        <img class="popup__img popup__img_2" src="images/popup/2.png" alt="Уборщица">
+                        <p class="popup__text popup__text_2"><span>Скидка</span> на мойку окон <span>20 % </span> при заказе
+                           любого вида уборки </p>
+                     </div>
+                     <div class="popup__item">
+                        <img class="popup__img popup__img_3" src="images/popup/3.png" alt="Инвентарь для уборки">
+                        <p class="popup__text popup__text_3"><span>Скидка </span> на
+                           первый заказ <span>15 % </span></p>
+                     </div>
+                     <div class="popup__item">
+                        <img class="popup__img popup__img_4" src="images/popup/4.png" alt="Подарок">
+                        <p class="popup__text popup__text_4"><span>Скидка </span> на
+                           День Рождения <span>20 % </span></p>
+                     </div>
+                     <form class="form" action="#" autocomplete="on">
+                        <label>Ваш е-маил
+                           <input class="form__input" type="text" name="еmail" placeholder="Ваш е-маил *" required>
+                        </label>
+                        <label>Ваш имя
+                           <input class="form__input" type="text" name="name" placeholder="Ваш имя">
+                        </label>
+                        <label for="message">Ваше сообщение</label>
+                        <textarea id="message" class="form__textarea" name="message" placeholder="Ваше сообщение" spellcheck="true"></textarea>
+                        <div class="form__box-button">
+                           <button class="form__button" type="submit">Отправить</button>
+                        </div>
+                        <label class="form__label-checked">
+                           <input class="filter-style" type="checkbox" required>
+                           Даю своё согласие на обработку <span>персональных данных</span>
+                        </label>
+                     </form>
                   </div>
                </div>
             </div>
