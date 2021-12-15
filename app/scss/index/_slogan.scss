@@ -1,6 +1,6 @@
 .slogan {
-   @include adaptiv-value("padding-top", 185, 60, 1);
-   @include adaptiv-value("padding-bottom", 50, 40, 1);
+   @include adaptiv-value("padding-top", 185, 35, 1);
+   @include adaptiv-value("padding-bottom", 50, 49, 1);
    background-color: #f9f9f9;
    &__title {
       @include adaptiv-value("margin-bottom", 35, 15, 1);

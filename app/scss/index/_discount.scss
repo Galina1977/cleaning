@@ -1,6 +1,6 @@
 .discount {
-   @include adaptiv-value("padding-top", 50, 40, 1);
-   @include adaptiv-value("padding-bottom", 50, 40, 1);
+   @include adaptiv-value("padding-top", 50, 45, 1);
+   @include adaptiv-value("padding-bottom", 50, 20, 1);
    &__inner {
       display: flex;
    }

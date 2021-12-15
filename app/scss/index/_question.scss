@@ -1,10 +1,13 @@
 .question {
-   @include adaptiv-value("padding-top", 160, 55, 1);
-   @include adaptiv-value("padding-bottom", 120, 60, 1);
+   @include adaptiv-value("padding-top", 160, 30, 1);
+   @include adaptiv-value("padding-bottom", 120, 30, 1);
    position: relative;
    &__title {
       text-align: center;
-      @include adaptiv-value("margin-bottom", 80, 45, 1);
+      @include adaptiv-value("margin-bottom", 80, 25, 1);
+   }
+   &__title-drop {
+      pointer-events: none;
    }
    &__inner {
       max-width: 760px;
@@ -36,7 +39,6 @@
       cursor: pointer;
       @include adaptiv-value("margin-top", -22, -9, 1);
       margin-left: auto;
-      z-index: 20;
       &:after {
          content: "";
          position: absolute;
@@ -74,5 +76,32 @@
       line-height: 22/16 * 100%;
       color: #000;
       padding: 10px;
+   }
+}
+
+@media (max-width: 768px) {
+   .question {
+      &__title-drop {
+         padding: 15px;
+         pointer-events: auto;
+         position: relative;
+         &::after {
+            content: "";
+            background-image: url("../images/icons/angle-down.svg");
+            background-repeat: no-repeat;
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            right: 0;
+            top: 17px;
+            transition: transform 0.4s ease 0s;
+         }
+      }
+      .question__title-drop--active::after {
+         transform: rotate(180deg);
+      }
+      &__box-hidden {
+         display: none;
+      }
    }
 }

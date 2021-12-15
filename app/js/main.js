@@ -128,4 +128,19 @@ $(function () {
       $(this).next().slideToggle(500);
    });
 
+   $(".services__title-drop").on("click", function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass("services__title-drop--active");
+   });
+
+   $(".question__title-drop").on("click", function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass("question__title-drop--active");
+   });
+
+   $(".additional-services__title-drop").on("click", function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass("additional-services__title-drop--active");
+   });
+
 });
